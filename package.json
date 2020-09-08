@@ -1,0 +1,79 @@
+{
+  "name": "belleui",
+  "private": true,
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "clean": "rimraf packages/*/lib && rimraf packages/*/src/**-css.ts",
+    "lint": "npm run lint:typescript && npm run lint:lit",
+    "lint:typescript": "eslint \"packages/**/src/*.ts\"",
+    "lint:fix": "npm run lint:typescript -- --fix && npm run lint:lit -- --fix",
+    "lint:lit": "lit-analyzer \"packages/**/src/*.ts\" --strict",
+    "dev": "es-dev-server --node-resolve --preserve-symlinks --watch --app-index demos/index.html --open",
+    "build:scss": "sh scripts/build-scss-ts.sh",
+    "build:typescript": "tsc --build",
+    "build": "npm run build:scss && npm run build:typescript",
+    "watch": "npm run build && node scripts/watcher.js",
+    "cz": "git-cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-lerna-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "packages/**/src/*.ts": [
+      "eslint --fix"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^9.0.1",
+    "@commitlint/config-conventional": "^9.0.1",
+    "@rollup/plugin-commonjs": "^14.0.0",
+    "@rollup/plugin-node-resolve": "^8.4.0",
+    "@typescript-eslint/eslint-plugin": "^3.4.0",
+    "@typescript-eslint/parser": "^3.4.0",
+    "chalk": "^4.1.0",
+    "command-line-args": "^5.1.1",
+    "commitizen": "^4.1.2",
+    "concurrently": "^5.2.0",
+    "cross-spawn": "^7.0.3",
+    "cz-lerna-changelog": "^2.0.3",
+    "dedent": "^0.7.0",
+    "es-dev-server": "^1.56.0",
+    "eslint": "^7.3.1",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-wc": "^1.2.0",
+    "husky": "^4.2.5",
+    "lerna": "^3.22.1",
+    "lint-staged": "^10.2.11",
+    "lit-analyzer": "^1.1.11",
+    "node-sass": "^4.14.1",
+    "node-watch": "^0.6.4",
+    "patch-package": "^6.2.2",
+    "postinstall-postinstall": "^2.1.0",
+    "puppeteer": "^5.2.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.22.2",
+    "rollup-plugin-copy": "^3.3.0",
+    "rollup-plugin-terser": "^6.1.0",
+    "typescript": "^3.9.5"
+  },
+  "bugs": {
+    "url": "https://github.com/WUSO01/belleui/issues"
+  },
+  "homepage": "https://github.com/WUSO01/belleui#readme"
+}

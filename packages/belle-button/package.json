@@ -1,0 +1,30 @@
+{
+  "name": "@belleui/belle-button",
+  "version": "0.0.0",
+  "description": "button",
+  "keywords": [
+    "button",
+    "web-components",
+    "belleui"
+  ],
+  "author": "WUSO01 <hi.wuso01@gmail.com>",
+  "homepage": "https://github.com/WUSO01/belleui/tree/master/packages/belle-button",
+  "license": "MIT",
+  "main": "lib/belle-button.js",
+  "module": "lib/belle-button.js",
+  "types": "lib/belle-button.d.ts",
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WUSO01/belleui",
+    "directory": "packages/belle-button"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "lit-element": "^2.3.1"
+  }
+}

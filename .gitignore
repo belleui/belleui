@@ -1,0 +1,11 @@
+node_modules
+.DS_Store
+.history
+/coverage
+
+/packages/**/lib
+/packages/*/src/*-css.ts
+
+lerna-debug.log
+yarn-error.log
+/dist

@@ -1,0 +1,92 @@
+:host {
+  --font-color: #212529;
+  --border-color: #212529;
+  --border-radius: 6px;
+  display: inline-block;
+}
+:host([type="primary"]) {
+  --font-color: #fff;
+  --background-color: #007bff;
+  --border-color: var(--background-color);
+  --hover-background-color: #0069d9;
+  --hover-border-color: #0062cc;
+}
+:host([type="success"]) {
+  --font-color: #fff;
+  --background-color: #28a745;
+  --border-color: var(--background-color);
+  --hover-background-color: #218838;
+  --hover-border-color: #1e7e34;
+}
+:host([type="danger"]) {
+  --font-color: #fff;
+  --background-color: #dc3545;
+  --border-color: var(--background-color);
+  --hover-background-color: #c82333;
+  --hover-border-color: #bd2130;
+}
+:host([type="warning"]) {
+  --font-color: #fff;
+  --background-color: #ffc107;
+  --border-color: var(--background-color);
+  --hover-background-color: #e0a800;
+  --hover-border-color: #d39e00;
+}
+:host([type="light"]) {
+  --background-color: #f8f9fa;
+  --border-color: var(--background-color);
+  --hover-background-color: #e2e6ea;
+  --hover-border-color: #dae0e5;
+}
+:host([type="dark"]) {
+  --font-color: #fff;
+  --background-color: #343a40;
+  --border-color: var(--background-color);
+  --hover-background-color: #23272b;
+  --hover-border-color: #1d2124;
+}
+
+:host([disabled]) {
+  opacity: .65;
+  button {
+    cursor: default;
+    &:hover {
+      background: var(--background-color);
+      border-color: var(--border-color);
+    }
+  }
+}
+
+:host([outline]) {
+  button {
+    color: var(--background-color);
+    background: none;
+    &:hover {
+      color: var(--font-color);
+      background: var(--hover-background-color);
+    }
+  }
+}
+
+button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  color: var(--font-color);
+  font-size: 14px;
+  text-align: center;
+  background: var(--background-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  outline: none;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all .3s;
+  &:hover {
+    color: var(--hover-font-color, var(--font-color));
+    background: var(--hover-background-color);
+    border-color: var(--hover-border-color);
+  }
+}
