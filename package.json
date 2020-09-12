@@ -16,7 +16,8 @@
     "build:typescript": "tsc --build",
     "build": "npm run build:scss && npm run build:typescript",
     "watch": "npm run build && node scripts/watcher.js",
-    "cz": "git-cz"
+    "cz": "git-cz",
+    "readme": "node scripts/generate-readme.js"
   },
   "config": {
     "commitizen": {
@@ -35,6 +36,7 @@
     ]
   },
   "devDependencies": {
+    "@appnest/readme": "^1.2.7",
     "@commitlint/cli": "^9.0.1",
     "@commitlint/config-conventional": "^9.0.1",
     "@rollup/plugin-commonjs": "^14.0.0",
@@ -57,6 +59,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
     "eslint-plugin-wc": "^1.2.0",
+    "fs-extra": "^9.0.1",
     "husky": "^4.2.5",
     "lerna": "^3.22.1",
     "lint-staged": "^10.2.11",
@@ -70,7 +73,8 @@
     "rollup": "^2.22.2",
     "rollup-plugin-copy": "^3.3.0",
     "rollup-plugin-terser": "^6.1.0",
-    "typescript": "^3.9.5"
+    "typescript": "^3.9.5",
+    "web-component-analyzer": "^1.1.6"
   },
   "bugs": {
     "url": "https://github.com/WUSO01/belleui/issues"
