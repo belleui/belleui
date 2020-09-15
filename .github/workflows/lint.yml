@@ -17,13 +17,5 @@ jobs:
       - name: install nodejs dependencies
         run: npm install
 
-  lint:
-    runs-on: ubuntu-latest
-    steps:
-      - name: checkout
-        uses: actions/checkout@master
-
       - name: lint
         run: npm run lint
-        
-    needs: setup
