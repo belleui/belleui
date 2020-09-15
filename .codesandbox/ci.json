@@ -1,4 +1,3 @@
 {
-  "sandboxes": ["belleui-template-deto5"],
-  "installCommand": "bootstrap"
+  "sandboxes": ["belleui-template-deto5"]
 }
