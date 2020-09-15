@@ -1,4 +1,3 @@
 {
-  "buildCommand": false,
-  "sandboxes": ["belle"]
+  "buildCommand": false
 }
