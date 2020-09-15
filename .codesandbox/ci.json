@@ -1,4 +1,4 @@
 {
-  "sandboxes": ["belle-template-yq2k1"],
+  "sandboxes": ["belle-template-yq2k1", "/demos"],
   "buildCommand": false
 }
