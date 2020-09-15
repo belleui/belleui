@@ -3,8 +3,10 @@ name: Run Eslint
 on: [push]
 
 jobs:
-  setup:
+  run-linters:
+    name: Run Eslint
     runs-on: ubuntu-latest
+    
     steps:
       - name: checkout
         uses: actions/checkout@master
