@@ -15,7 +15,7 @@
     "dev": "es-dev-server --node-resolve --preserve-symlinks --watch --app-index demos/index.html --open",
     "build:scss": "sh scripts/build-scss-ts.sh",
     "build:typescript": "tsc --build",
-    "build": "npm run build:scss && npm run build:typescript",
+    "build": "npm run build:typescript",
     "watch": "npm run build && node scripts/watcher.js",
     "cz": "git-cz",
     "readme": "node scripts/generate-readme.js"
