@@ -1,0 +1,21 @@
+name: Run Eslint
+
+on: [push]
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@master
+      - name: set up node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14
+
+      # Install dependencies
+      - name: install nodejs dependencies
+        run: npm install
+
+      - name: lint
+        run: npm run lint
