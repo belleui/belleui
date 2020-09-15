@@ -1,4 +1,4 @@
 {
-  "sandboxes": ["belle-template-yq2k1", "/demos"],
+  "sandboxes": ["antd-reproduction-template-6e93z"],
   "buildCommand": false
 }
