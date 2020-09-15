@@ -1,4 +1,4 @@
 {
   "sandboxes": ["belleui-template-deto5"],
-  "buildCommand": false
+  "installCommand": "bootstrap"
 }
