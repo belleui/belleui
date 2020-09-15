@@ -1,0 +1,27 @@
+name: Run Eslint
+
+on: [push, pull_request]
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@master
+      - name: set up node
+        uses: actions/setup-node@v1
+
+      # Install dependencies
+      - name: install nodejs dependencies
+        run: npm install
+      
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@master
+
+      - name: lint
+        run: npm run lint
+        
+    needs: setup
