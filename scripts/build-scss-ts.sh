@@ -1,6 +1,8 @@
+#!/usr/bin/env bash
+
 set -e
 
-sassfiles=find packages -name "*.scss"
+sassfiles=(`find packages -name "*.scss"`)
 
 for sassfile in ${sassfiles[@]}; do
   cssts=`echo ${sassfile} | sed -e 's/.scss/-css.ts/'`
