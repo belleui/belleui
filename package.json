@@ -6,6 +6,7 @@
     "packages/*"
   ],
   "scripts": {
+    "bootstrap": "yarn",
     "clean": "rimraf packages/*/lib && rimraf packages/*/src/**-css.ts",
     "lint": "npm run lint:typescript && npm run lint:lit",
     "lint:typescript": "eslint \"packages/**/src/*.ts\"",
