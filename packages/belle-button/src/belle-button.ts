@@ -1,5 +1,5 @@
 import { customElement, LitElement, html, property, TemplateResult } from 'lit-element'
-import style from './belle-button-css'
+// import style from './belle-button-css'
 
 type ButtonType = 'default' | 'primary' | 'success' | 'danger' | 'warning' | 'light' | 'dark'
 
@@ -18,7 +18,7 @@ type ButtonType = 'default' | 'primary' | 'success' | 'danger' | 'warning' | 'li
  */
 @customElement('belle-button')
 export class belleButton extends LitElement {
-  static styles = style
+  // static styles = style
 
   /**
    * 按钮的类型
