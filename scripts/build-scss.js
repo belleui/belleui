@@ -1,7 +1,11 @@
+/**
+ * 编译scss
+ */
 const fs = require('fs')
+const path = require('path')
 const sass = require('node-sass')
 const dedent = require('dedent')
-const commandLineArgs = require('command-line-args')
+const getPkg = require('./utils/getPkg')
 
 /**
  * https://sass-lang.com/documentation/js-api
@@ -31,11 +35,16 @@ function cssTstemplate(content) {
   return newContent
 }
 
-const optionDefinitions = [
-  { name: 'source', alias: 's', type: String },
-  { name: 'output', alias: 'o', type: String }
-]
+const packages = getPkg('packages')
 
-const { source, output } = commandLineArgs(optionDefinitions)
+if (packages.length) {
+  packages.forEach(pkg => {
+    const scssFile = path.join('packages', pkg, 'src', `${pkg}.scss`)
+    const cssTS = path.join('packages', pkg, 'src', `${pkg}-css.ts`)
 
-sassRender(source, output)
+    if (fs.existsSync(scssFile)) {
+      sassRender(scssFile, cssTS)
+    }
+  })
+}
+
