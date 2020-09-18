@@ -1,10 +1,12 @@
 name: Deploy
 
-on:
-  release:
-    types: [published]
-    branches:
-      - master
+# on:
+#   release:
+#     types: [published]
+#     branches:
+#       - master
+
+on: [push]
 
 jobs:
   build-site:
@@ -22,7 +24,11 @@ jobs:
       - name: install
         run: npm install
 
+      # build
       - name: build
+        run: npm run build
+  
+      - name: site
         run: npm run site
 
       - name: Deploy
