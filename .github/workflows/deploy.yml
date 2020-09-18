@@ -1,28 +1,29 @@
 name: Deploy
 
-on:
-  release:
-    types: [published]
-    branches:
-      - master
+# on:
+#   release:
+#     types: [published]
+#     branches:
+#       - master
+
+on: [push]
 
 jobs:
   build-site:
     runs-on: ubuntu-latest
   
     steps:
-      - name: checkout
         uses: actions/checkout@master
-
-      - name: set up node
         uses: actions/setup-node@v1
         with:
           node-version: 14
 
-      - name: install
-        run: npm install
+      - name: install and build
+        run: |
+          npm install
+          npm run build
 
-      - name: build
+      - name: build site
         run: npm run site
 
       - name: Deploy
