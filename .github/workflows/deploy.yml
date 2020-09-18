@@ -1,17 +1,10 @@
 name: Deploy
 
-# on:
-#   release:
-#     types: [published]
-#     branches:
-#       - master
-# on:
-#   release:
-#     types: [published]
-#     branches:
-#       - master
-
-on: [push]
+on:
+  release:
+    types: [published]
+    branches:
+      - master
 
 jobs:
   build-site:
