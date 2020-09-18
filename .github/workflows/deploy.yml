@@ -1,29 +1,30 @@
 name: Deploy
 
-on:
-  release:
-    types: [published]
-    branches:
-      - master
+# on:
+#   release:
+#     types: [published]
+#     branches:
+#       - master
+
+on: [push]
 
 jobs:
   build-site:
     runs-on: ubuntu-latest
   
     steps:
-      - name: checkout
-        uses: actions/checkout@master
-
-      - name: set up node
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@v1
         with:
           node-version: 14
 
-      - name: install
-        run: npm install
+      - name: install and build
+        run: |
+          yarn
+          yarn build
 
-      - name: build
-        run: npm run site
+      - name: build site
+        run: yarn site
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3.6.4

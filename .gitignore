@@ -12,3 +12,4 @@ yarn.lock
 
 /dist
 /_site
+package-lock.json
