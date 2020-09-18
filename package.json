@@ -17,7 +17,8 @@
     "build": "npm run build:scss && npm run build:typescript",
     "watch": "npm run build && node scripts/watcher.js",
     "cz": "git-cz",
-    "readme": "node scripts/generate-readme.js"
+    "readme": "node scripts/generate-readme.js",
+    "site": "rollup -c"
   },
   "config": {
     "commitizen": {
@@ -40,7 +41,7 @@
     "@commitlint/cli": "^9.0.1",
     "@commitlint/config-conventional": "^9.0.1",
     "@rollup/plugin-commonjs": "^14.0.0",
-    "@rollup/plugin-node-resolve": "^8.4.0",
+    "@rollup/plugin-node-resolve": "^9.0.0",
     "@typescript-eslint/eslint-plugin": "^3.4.0",
     "@typescript-eslint/parser": "^3.4.0",
     "chalk": "^4.1.0",
@@ -63,15 +64,16 @@
     "lerna": "^3.22.1",
     "lint-staged": "^10.2.11",
     "lit-analyzer": "^1.1.11",
+    "lit-element-router": "^2.0.3",
     "node-sass": "^4.14.1",
     "node-watch": "^0.6.4",
     "patch-package": "^6.2.2",
     "postinstall-postinstall": "^2.1.0",
     "puppeteer": "^5.2.1",
     "rimraf": "^3.0.2",
-    "rollup": "^2.22.2",
+    "rollup": "^2.27.1",
     "rollup-plugin-copy": "^3.3.0",
-    "rollup-plugin-terser": "^6.1.0",
+    "rollup-plugin-terser": "^7.0.2",
     "typescript": "^3.9.5",
     "web-component-analyzer": "^1.1.6"
   },
