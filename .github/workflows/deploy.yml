@@ -13,18 +13,18 @@ jobs:
     runs-on: ubuntu-latest
   
     steps:
-        uses: actions/checkout@master
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@v1
         with:
           node-version: 14
 
       - name: install and build
         run: |
-          npm install
-          npm run build
+          yarn
+          yarn build
 
       - name: build site
-        run: npm run site
+        run: yarn site
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3.6.4
