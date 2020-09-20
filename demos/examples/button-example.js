@@ -1,4 +1,5 @@
 import { LitElement, html } from 'lit-element'
+
 import '@belleui/belle-button'
 
 class ButtonExample extends LitElement {
