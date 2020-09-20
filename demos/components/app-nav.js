@@ -9,20 +9,25 @@ class AppNav extends navigator(LitElement) {
     :host {
       display: block;
       width: 100%;
-      background: #fff;
-      box-shadow: 0 2px 8px #f0f1f2;
     }
     header {
       box-sizing: border-box;
       display: flex;
       align-items: center;
-      justify-content: space-between;
       position: sticky;
       top: 0;
       width: 100%;
-      max-width: 1100px;
+      max-width: 800px;
       height: 60px;
       margin: 0 auto;
+    }
+    h1 {
+      margin-right: 10px;
+      font-size: 20px;
+    }
+    a {
+      text-decoration: none;
+      color: #007bff;
     }
   `
 
@@ -30,10 +35,13 @@ class AppNav extends navigator(LitElement) {
     return html`
       <header>
         <div class="logo">
-          <app-link href="/">Belleui</app-link>
+          <h1>
+            <app-link href="">Belleui</app-link>
+          </h1>
         </div>
         <div class="nav">
           <app-link href="/components">组件</app-link>
+          <a href="https://github.com/belleui/belleui">github</a>
         </div>
       </header>
     `

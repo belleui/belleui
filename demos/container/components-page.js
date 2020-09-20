@@ -6,7 +6,7 @@ class ComponentsPage extends LitElement {
       display: flex;
       width: 100%;
       height: 100vh;
-      max-width: 1100px;
+      max-width: 800px;
       margin: 0 auto;
     }
   `
@@ -15,7 +15,12 @@ class ComponentsPage extends LitElement {
     return html`
       <div class="container">
         <aside>
-
+          <app-link href="/components/button">Button</app-link>
+        </aside>
+        <aside>
+          <section>
+            <button-example route="not-found"></button-example>
+          </section>
         </aside>
       </div>
     `

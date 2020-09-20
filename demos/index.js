@@ -1,5 +1,6 @@
 import { LitElement, html, css } from 'lit-element'
 import { router } from 'lit-element-router'
+import { changeRoute } from './utils'
 
 import './components/app-main'
 import './components/app-nav'
@@ -29,8 +30,8 @@ class MyApp extends router(LitElement) {
 
   static get routes() {
     return [
-      { name: 'home', pattern: '' },
-      { name: 'components', pattern: 'components' },
+      { name: 'home', pattern: changeRoute() },
+      { name: 'components', pattern: changeRoute('/components') },
       { name: 'not-found', pattern: '*' }
     ]
   }
@@ -62,6 +63,7 @@ class MyApp extends router(LitElement) {
       </div>
     `
   }
+
 }
 
 customElements.define('my-app', MyApp)

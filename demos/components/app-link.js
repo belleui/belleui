@@ -1,5 +1,6 @@
 import { LitElement, html, css } from 'lit-element'
 import { navigator } from 'lit-element-router'
+import { changeRoute } from '../utils'
 
 class AppLink extends navigator(LitElement) {
 
@@ -31,7 +32,7 @@ class AppLink extends navigator(LitElement) {
 
   handleClick(e) {
     e.preventDefault()
-    this.navigate(this.href)
+    this.navigate(changeRoute(this.href))
   }
 }
 
