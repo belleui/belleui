@@ -29,6 +29,9 @@
   ],
   "references": [
     {
+      "path": "packages/belle-lib"
+    },
+    {
       "path": "packages/belle-button"
     }
   ]
