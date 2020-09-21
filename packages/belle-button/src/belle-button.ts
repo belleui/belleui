@@ -17,7 +17,7 @@ type ButtonType = 'default' | 'primary' | 'success' | 'danger' | 'warning' | 'li
  * @cssprop [--border-radis=6px] 圆角
  */
 @customElement('belle-button')
-export class belleButton extends LitElement {
+export class BelleButton extends LitElement {
   static styles = style
 
   /**
@@ -52,6 +52,6 @@ export class belleButton extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'belle-button': belleButton
+    'belle-button': BelleButton
   }
 }
