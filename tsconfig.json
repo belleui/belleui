@@ -21,7 +21,6 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "skipLibCheck": true,
-    "outDir": "./",
     "baseUrl": "./packages"
   },
   "include": [
