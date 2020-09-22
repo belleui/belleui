@@ -37,7 +37,7 @@ async function task(name) {
   // watch scss change
   if (name.endsWith('scss')) {
     console.log('building styles')
-    execPromise = exec('npm run build')
+    execPromise = exec('npm run build:scss')
   } else {
     console.log('building typescript')
     execPromise = exec('npm run build:typescript')
