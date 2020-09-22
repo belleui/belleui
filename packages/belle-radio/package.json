@@ -1,0 +1,31 @@
+{
+  "name": "@belleui/belle-radio",
+  "version": "0.0.0",
+  "description": "radio",
+  "keywords": [
+    "radio",
+    "web-components",
+    "belleui"
+  ],
+  "author": "WUSO01 <hi.wuso01@gmail.com>",
+  "homepage": "https://github.com/belleui/belleui/tree/master/packages/belle-radio",
+  "license": "MIT",
+  "main": "lib/belle-radio.js",
+  "module": "lib/belle-radio.js",
+  "types": "lib/belle-radio.d.ts",
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/belleui/belleui",
+    "directory": "packages/belle-radio"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@belleui/belle-lib": "^0.0.0",
+    "lit-element": "^2.3.1"
+  }
+}
