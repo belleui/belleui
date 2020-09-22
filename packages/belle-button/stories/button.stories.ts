@@ -1,6 +1,6 @@
 import { TemplateResult, html } from 'lit-element'
 
-import '@belleui/belle-button'
+import '@bellui/belle-button'
 
 export default {
   title: 'Button',
@@ -17,9 +17,7 @@ export const Default = (): TemplateResult => html`
   <belle-button type="light">Light</belle-button>
 `
 
-Default.story = {
-  name: 'Default'
-}
+Default.storyName = 'Default'
 
 export const outline = (): TemplateResult => html`
   <belle-button outline>Default</belle-button>
@@ -27,14 +25,10 @@ export const outline = (): TemplateResult => html`
   <belle-button type="success" outline>Success</belle-button>
 `
 
-outline.story = {
-  name: 'Outline'
-}
+outline.storyName = 'Outline'
 
 export const disable = (): TemplateResult => html`
   <belle-button type="primary" disabled>Primary</belle-button>
 `
 
-disable.story = {
-  name: 'Disable'
-}
+disable.storyName = 'Disable'

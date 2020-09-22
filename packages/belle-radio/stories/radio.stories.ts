@@ -11,6 +11,4 @@ export const Default = (): TemplateResult => html`
   <belle-radio>Radio</belle-radio>
 `
 
-Default.story = {
-  name: 'Default'
-}
+Default.storyName = 'Default'

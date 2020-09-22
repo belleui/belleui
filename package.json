@@ -6,12 +6,12 @@
     "packages/*"
   ],
   "scripts": {
-    "clean": "rimraf packages/*/lib && rimraf **/*-css.ts && rimraf packages/*/custom-elements.json && rimraf **/*.stories.js",
+    "clean": "rimraf packages/*/lib && rimraf **/*-css.ts && rimraf custom-elements.json && rimraf **/*.stories.js",
     "lint": "npm run lint:typescript && npm run lint:lit",
     "lint:typescript": "eslint \"packages/**/src/*.ts\"",
     "lint:fix": "npm run lint:typescript -- --fix && npm run lint:lit -- --fix",
     "lint:lit": "lit-analyzer \"packages/**/src/*.ts\" --strict",
-    "prestorybook": "wca analyze packages/**/src/*.ts --format json --outFiles {dir}/../custom-elements.json",
+    "prestorybook": "wca analyze 'packages/*/src/*.ts' --format json --outFile custom-elements.json",
     "storybook": "yarn build && run-p stories:watch storybook:start",
     "storybook:start": "start-storybook --node-resolve --watch --open",
     "stories:build": "tsc --build .storybook/tsconfig.json",
