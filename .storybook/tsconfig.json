@@ -1,0 +1,15 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "inlineSources": false,
+    "sourceMap": false,
+    "declaration": false
+  },
+  "include": [
+    "../packages/*/stories/**/*.ts"
+  ],
+  "exclude": [
+    "../packages/*/src/*.ts",
+    "../packages/*/__test__/*.ts"
+  ]
+}

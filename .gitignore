@@ -4,7 +4,11 @@ node_modules
 /coverage
 
 /packages/**/lib
-/packages/*/src/*-css.ts
+*-css.ts
+*.stories.js
+*.d.ts
+*.js.map
+custom-elements.json
 
 lerna-debug.log
 yarn-error.log
