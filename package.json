@@ -21,7 +21,7 @@
     "build:typescript": "tsc --build",
     "build": "npm run build:scss && npm run build:typescript",
     "watch": "npm run build && node scripts/watcher.js",
-    "site": "yarn site:clean && yarn site:tsc && rollup -c ./site/rollup.config.js",
+    "site": "yarn site:clean && yarn site:build && rollup -c ./site/rollup.config.js",
     "site:start": "yarn site:clean && run-p site:watch es-dev-server --node-resolve --preserve-symlinks --watch --app-index site/index.html --open",
     "site:build": "tsc --build site/tsconfig.json",
     "site:watch": "tsc --build site/tsconfig.json --watch",
