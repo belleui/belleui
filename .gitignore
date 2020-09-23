@@ -10,6 +10,7 @@ lerna-debug.log
 yarn-error.log
 yarn.lock
 
-/dist
-/_site
+dist
+_site
+
 package-lock.json
