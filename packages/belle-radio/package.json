@@ -10,9 +10,9 @@
   "author": "WUSO01 <hi.wuso01@gmail.com>",
   "homepage": "https://github.com/belleui/belleui/tree/master/packages/belle-radio",
   "license": "MIT",
-  "main": "lib/belle-radio.js",
-  "module": "lib/belle-radio.js",
-  "types": "lib/belle-radio.d.ts",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "types": "lib/index.d.ts",
   "files": [
     "lib"
   ],
