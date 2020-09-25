@@ -7,6 +7,7 @@ node_modules
 *-css.ts
 *.stories.js
 *.d.ts
+!global.d.ts
 *.js.map
 custom-elements.json
 

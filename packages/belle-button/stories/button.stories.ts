@@ -1,6 +1,6 @@
 import { TemplateResult, html } from 'lit-element'
 
-import '@bellui/belle-button'
+import '@belleui/belle-button'
 
 export default {
   title: 'Button',

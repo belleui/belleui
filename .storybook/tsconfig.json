@@ -6,6 +6,7 @@
     "declaration": false
   },
   "include": [
+    "../global.d.ts",
     "../packages/*/stories/**/*.ts"
   ],
   "exclude": [

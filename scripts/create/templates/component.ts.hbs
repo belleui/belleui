@@ -1,0 +1,24 @@
+import { customElement, LitElement, html, property, TemplateResult } from 'lit-element'
+import style from './{{name}}-css'
+
+/**
+ * @element {{name}}
+ */
+@customElement('{{name}}')
+export class {{cname}} extends LitElement {
+  static styles = style
+
+  @property()
+
+  render(): TemplateResult {
+    return html`
+
+    `
+  }
+}
+
+declare global {
+  interface HTMLElementTagNameMap {
+    '{{name}}': {{cname}}
+  }
+}
