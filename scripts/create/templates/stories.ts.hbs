@@ -1,0 +1,12 @@
+import { TemplateResult, html } from 'lit-element'
+
+import '@belleui/{{name}}'
+
+export default {
+  title: '{{splitName}}',
+  component: '{{name}}'
+}
+
+export const Default = (): TemplateResult => html`
+  <{{name}}></{{name}}>
+`
