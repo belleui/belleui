@@ -1,0 +1,30 @@
+{
+  "name": "@belleui/belle-switch",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [
+    "web-components",
+    "belleui"
+  ],
+  "author": "WUSO01 <hi.wuso01@gmail.com>",
+  "homepage": "https://github.com/belleui/belleui/tree/master/packages/belle-switch",
+  "license": "MIT",
+  "main": "lib/belle-switch.js",
+  "module": "lib/belle-switch.js",
+  "types": "lib/belle-switch.d.ts",
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/belleui/belleui",
+    "directory": "packages/belle-switch"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@belleui/belle-lib": "^0.0.0",
+    "lit-element": "^2.3.1"
+  }
+}

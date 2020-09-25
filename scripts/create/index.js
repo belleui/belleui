@@ -9,6 +9,6 @@ console.log(
 
     💡 组件名应该添加'belle'前缀, 如：belle-button
 
-    🌟 创建新的组件后，记得更新README.md中的 Components 列表
+    🌟 创建新的组件后，记得更新README.md中的 Components 列表
   `)
 )

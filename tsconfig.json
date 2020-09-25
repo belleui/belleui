@@ -25,17 +25,6 @@
   },
   "include": [
     "src/*.ts"
-  ],
-  "references": [
-    {
-      "path": "packages/belle-lib"
-    },
-    {
-      "path": "packages/belle-button"
-    },
-    {
-      "path": "packages/belle-radio"
-    }
   ]
 }
 
