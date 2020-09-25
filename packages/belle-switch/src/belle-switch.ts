@@ -7,7 +7,7 @@ import style from './belle-switch-css'
  * @element belle-switch
  */
 @customElement('belle-switch')
-export class Belleswitch extends LitElement {
+export class BelleSwitch extends LitElement {
   static styles = style
 
   @query('input') protected formElement!: HTMLInputElement
@@ -50,6 +50,6 @@ export class Belleswitch extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'belle-switch': Belleswitch
+    'belle-switch': BelleSwitch
   }
 }

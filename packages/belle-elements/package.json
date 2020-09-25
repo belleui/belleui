@@ -1,0 +1,32 @@
+{
+  "name": "@belleui/belle-elements",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [
+    "web-components",
+    "belleui"
+  ],
+  "author": "WUSO01 <hi.wuso01@gmail.com>",
+  "homepage": "https://github.com/belleui/belleui/tree/master/packages/belle-elements",
+  "license": "MIT",
+  "main": "lib/belle-elements.js",
+  "module": "lib/belle-elements.js",
+  "types": "lib/belle-elements.d.ts",
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/belleui/belleui",
+    "directory": "packages/belle-elements"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@belleui/belle-button": "^0.0.0",
+    "@belleui/belle-lib": "^0.0.0",
+    "@belleui/belle-radio": "^0.0.0",
+    "@belleui/belle-switch": "^0.0.0"
+  }
+}
