@@ -4,8 +4,11 @@ Bellui是一个Web-Components的UI组件库，您可以在HTML中，或者任何
 
 ## Components
 
+- [`<belle-elements>`](https://github.com/belleui/belleui/blob/master/packages/belle-elements)
 - [`<belle-button>`](https://github.com/belleui/belleui/blob/master/packages/belle-button)
+- [`<belle-lib>`](https://github.com/belleui/belleui/blob/master/packages/belle-lib)
 - [`<belle-radio>`](https://github.com/belleui/belleui/blob/master/packages/belle-radio)
+- [`<belle-switch>`](https://github.com/belleui/belleui/blob/master/packages/belle-switch)
 
 ## Contributing
 
