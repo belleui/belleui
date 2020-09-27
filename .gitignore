@@ -13,7 +13,6 @@ custom-elements.json
 
 lerna-debug.log
 yarn-error.log
-yarn.lock
 
 dist
 _site
