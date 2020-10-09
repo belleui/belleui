@@ -1,0 +1,52 @@
+:host {
+  --switch-color: #007bff;
+}
+:host([disabled]) .switch {
+  cursor: not-allowed;
+}
+.switch {
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  width: 24px;
+  height: 16px;
+  margin-right: 5px;
+  border: 2px solid var(--switch-color);
+  border-radius: 20px;
+  transition: background 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  vertical-align: middle;
+  cursor: pointer;
+  opacity: .2;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 10px;
+    height: 10px;
+    background: var(--switch-color);
+    border-radius: 50%;
+    transition: left 0.28s cubic-bezier(0.4, 0, 0.2, 1),
+      background 0.28s cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:active {
+    &::before {
+      box-shadow: 0 2px 8px rgba(0,0,0,0.28), 0 0 0 20px rgba(128,128,128,0.1);
+    }
+  }
+}
+input:checked + .switch {
+  border: 2px solid var(--switch-color);
+  opacity: 1;
+}
+input:checked + .switch::before {
+  left: 9px;
+  background: var(--switch-color);
+}
+input:checked + .switch:active::before {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.28), 0 0 0 20px rgba(0,150,136,0.2);
+}
+input:disabled + .switch {
+  cursor: not-allowed
+}

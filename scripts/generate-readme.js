@@ -83,8 +83,13 @@ class Readme {
         "badges": [
           {
             "alt": "TypeScript",
-            "url": "https://github.com/badges/shields",
+            "url": "https://github.com/belleui/belleui/blob/master/packages/${this.pkg}",
             "img": "https://img.shields.io/npm/types/@belleui/${this.pkg}"
+          },
+          {
+            "alt": "Published on webcomponents.org",
+            "url": "https://www.webcomponents.org/element/@belleui/${this.pkg}",
+            "img": "https://img.shields.io/badge/webcomponents.org-published-blue.svg"
           }
         ]
       }

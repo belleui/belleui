@@ -4,7 +4,6 @@
 
 Bellui是一个基于 [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components) 的 UI 组件库，您可以在`HTML`中，或者任何框架（如[React](https://github.com/facebook/react), [Vue](https://github.com/vuejs/vue),  [Angular](https://github.com/angular/angular)）中使用。引入组件后，你可以随时随地的像使用原生`html`标签一样使用组件。
 
-
 **相关资源：**
 
 * [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
