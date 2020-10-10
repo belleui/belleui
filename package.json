@@ -18,7 +18,7 @@
     "stories:watch": "tsc --build .storybook/tsconfig.json -w",
     "storybook:build": "build-storybook",
     "build:scss": "node scripts/build-scss.js",
-    "build:typescript": "tsc --build packages/**/tsconfig.json",
+    "build:typescript": "tsc --build packages/belle-lib/tsconfig.json &&  tsc --build packages/**/tsconfig.json",
     "build": "npm run build:scss && npm run build:typescript",
     "watch": "npm run build && node scripts/watcher.js",
     "site:dev": "run-p 'site:ts --watch' site:open",

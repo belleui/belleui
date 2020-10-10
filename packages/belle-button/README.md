@@ -3,7 +3,8 @@
 <p align="center">
 		<a href="https://npmcharts.com/compare/@belleui/belle-button?minimal=true"><img alt="Downloads per month" src="https://img.shields.io/npm/dm/@belleui/belle-button.svg" height="20"/></a>
 <a href="https://www.npmjs.com/package/@belleui/belle-button"><img alt="NPM Version" src="https://img.shields.io/npm/v/@belleui/belle-button.svg" height="20"/></a>
-<a href="https://github.com/badges/shields"><img alt="TypeScript" src="https://img.shields.io/npm/types/@belleui/belle-button" height="20"/></a>
+<a href="https://github.com/belleui/belleui/blob/master/packages/belle-button"><img alt="TypeScript" src="https://img.shields.io/npm/types/@belleui/belle-button" height="20"/></a>
+<a href="https://www.webcomponents.org/element/@belleui/belle-button"><img alt="Published on webcomponents.org" src="https://img.shields.io/badge/webcomponents.org-published-blue.svg" height="20"/></a>
 	</p>
 
 
@@ -25,18 +26,6 @@
 [](#useage)
 
 ## Useage
-
-```html
-<section>
-	<belle-button>Default</belle-button>
-	<belle-button type="primary">Primary</belle-button>
-	<belle-button type="success">Success</belle-button>
-	<belle-button type="danger">Danger</belle-button>
-	<belle-button type="warning">Warning</belle-button>
-	<belle-button type="dark">Dark</belle-button>
-	<belle-button type="light">Light</belle-button>
-</section>
-```
 
 
 [](#belle-button)
