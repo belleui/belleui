@@ -12,8 +12,6 @@
 
 ## Preview
 
-![screent shot](./image/screenshot.png)
-
 
 [](#install)
 

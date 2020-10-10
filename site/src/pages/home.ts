@@ -7,14 +7,14 @@ export class HomePage extends LitElement {
     :host {
       display: block;
       width: 100%;
-      max-width: 800px;
-      margin: 0 auto;
     }
     a {
       text-decoration: none;
       color: inherit;
     }
     .home-body {
+      max-width: 800px;
+      margin: 0 auto;
       text-align: center;
     }
     .title {

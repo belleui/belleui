@@ -17,12 +17,18 @@ export class AppHeader extends LitElement {
     .title {
       margin: 0;
     }
+    a {
+      text-decoration: none;
+      color: #1f1f1f;
+    }
   `
 
   render(): TemplateResult {
     return html`
       <header>
-        <h1 class="title">Belleui</h1>
+        <h1 class="title">
+          <a href="/">Belleui</a>
+        </h1>
         <app-nav></app-nav>
       </header>
     `

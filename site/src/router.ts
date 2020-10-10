@@ -15,12 +15,12 @@ router.setRoutes([
   {
     path: '/components',
     component: 'app-layout',
-    action: async () => {
-      await import('./components/layout.js')
-    }
-    // children: [
-    //   { path: '/', component: 'home-page' },
-    //   { path: '/components', component: 'layout' }
-    // ]
+    children: [
+      // { path: '/', component: 'docs-component' },
+      {
+        path: '/:component',
+        component: 'docs-component',
+      }
+    ]
   }
 ])
