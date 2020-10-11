@@ -1,0 +1,29 @@
+:host {
+  --font-color: rgba($color: #000000, $alpha: 0.8);
+  --active-color: red;
+  font-size: 14px;
+}
+
+:host([selected]) {
+  --font-color: var(--active-color);
+  --bg-color: #e6f7ff;
+}
+
+.belle-menu-item {
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 16px 0 24px;
+  background: var(--bg-color);
+  a {
+    text-decoration: none;
+    color: var(--font-color);
+    transition: color .3s;
+  }
+  &:hover {
+    a {
+      color: var(--active-color);
+    }
+  }
+}
