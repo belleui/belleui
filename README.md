@@ -4,6 +4,12 @@
 
 Bellui是一个基于 [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components) 的 UI 组件库，您可以在`HTML`中，或者任何框架（如[React](https://github.com/facebook/react), [Vue](https://github.com/vuejs/vue),  [Angular](https://github.com/angular/angular)）中使用。引入组件后，你可以随时随地的像使用原生`html`标签一样使用组件。
 
+## 为什么选择 Belleui
+
+* 基于`Web Components`，能和其他框架结合使用，不用因为切换技术栈从而切换不用的UI框架。
+* 支持主流浏览器。
+* 提供丰富的UI组件。
+
 **相关资源：**
 
 * [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
@@ -16,6 +22,7 @@ Bellui是一个基于 [Web Components](https://developer.mozilla.org/en-US/docs/
 | [belle-button](https://github.com/belleui/belleui/blob/master/packages/belle-button) | [Issues](https://github.com/belleui/belleui/issues?q=label%3AComponent%3AButton) | [![npm version](https://img.shields.io/npm/v/@belleui/belle-button.svg?style=flat)](https://www.npmjs.com/package/@belleui/belle-button) |
 | [belle-elements](https://github.com/belleui/belleui/blob/master/packages/belle-elements) |  [Issues](https://github.com/belleui/belleui/issues?q=label%3AComponent%3AElements)  | [![npm version](https://img.shields.io/npm/v/@belleui/belle-elements.svg?style=flat)](https://www.npmjs.com/package/@belleui/belle-elements) |
 | [belle-lib](https://github.com/belleui/belleui/blob/master/packages/belle-lib) |  [Issues](https://github.com/belleui/belleui/issues?q=label%3AComponent%3ALib)  | [![npm version](https://img.shields.io/npm/v/@belleui/belle-lib.svg?style=flat)](https://www.npmjs.com/package/@belleui/belle-lib) 
+| [belle-menu](https://github.com/belleui/belleui/blob/master/packages/belle-menu) |  [Issues](https://github.com/belleui/belleui/issues?q=label%3AComponent%3AMenu)  | 开发中
 | [belle-radio](https://github.com/belleui/belleui/blob/master/packages/belle-radio) |  [Issues](https://github.com/belleui/belleui/issues?q=label%3AComponent%3ARadio)  | [![npm version](https://img.shields.io/npm/v/@belleui/belle-radio.svg?style=flat)](https://www.npmjs.com/package/@belleui/belle-radio) 
 | [belle-switch](https://github.com/belleui/belleui/blob/master/packages/belle-switch) |  [Issues](https://github.com/belleui/belleui/issues?q=label%3AComponent%Switch)  | [![npm version](https://img.shields.io/npm/v/@belleui/belle-switch.svg?style=flat)](https://www.npmjs.com/package/@belleui/belle-switch) 
 
