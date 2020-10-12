@@ -6,7 +6,7 @@
 
 :host([selected]) {
   --font-color: var(--active-color);
-  --bg-color: #e6f7ff;
+  // --bg-color: #e6f7ff;
 }
 
 .belle-menu-item {
@@ -15,7 +15,7 @@
   height: 40px;
   line-height: 40px;
   padding: 0 16px 0 24px;
-  background: var(--bg-color);
+  // background: var(--bg-color);
   a {
     text-decoration: none;
     color: var(--font-color);
@@ -25,5 +25,43 @@
     a {
       color: var(--active-color);
     }
+  }
+}
+
+.belle-sub-menu {
+  box-sizing: border-box;
+  padding: 0 16px 0 24px;
+  &.expand {
+    > .content {
+      height: auto;
+    }
+  }
+  &.selected {
+    > .header {
+      color: var(--active-color);
+    }
+  }
+  > .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    transition: color .3s;
+    > span {
+      cursor: pointer;
+    }
+    > i {
+      width: 20px;
+      height: 20px;
+      border: 1px solid;
+    }
+    &:hover {
+      color: var(--active-color);
+    }
+  }
+  > .content {
+    height: 0;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
   }
 }

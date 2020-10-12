@@ -2,7 +2,7 @@ import { customElement, LitElement, html, property, TemplateResult, query } from
 
 import style from './belle-menu-css'
 
-type MenuItem = HTMLElement & { key: string, selected: boolean }
+export type MenuItem = HTMLElement & { key: string, selected: boolean }
 
 /**
  * @element belle-menu
@@ -44,28 +44,44 @@ export class BelleMenu extends LitElement {
   slotChange() {
     // 获取menu-item 和 submenu
     const menuSlot = this.menuSlot as HTMLSlotElement
-    const menuNodes = menuSlot.assignedNodes()
+    this.findMenuItem(menuSlot)
+  }
+
+  private findMenuItem(nodes: HTMLElement) {
+    let menuNodes: any = []
+
+    if (nodes.tagName === 'SLOT') {
+      menuNodes = (nodes as HTMLSlotElement).assignedNodes()
+    } else {
+      menuNodes = nodes.querySelectorAll('belle-menu-item')
+    }
 
     if (menuNodes && menuNodes.length) {
       for (let i = 0; i < menuNodes.length; i++) {
         const ele = menuNodes[i] as MenuItem
         const tagName = ele.tagName
+        const key = ele.key || ''
+
+        if (tagName === 'BELLE-SUBMENU') {
+          this.findMenuItem(menuNodes[i] as HTMLElement)
+        }
+
         if (tagName === 'BELLE-MENU-ITEM') {
           this.nodes.push(ele)
-          const key = ele.key || ''
           // 设置默认选中的item
-          if (this.defaultSelectedKeys && (key === this.defaultSelectedKeys)) {
-            ele.selected = true
-          } else {
-            ele.selected = false
-          }
+        }
+
+        if (this.defaultSelectedKeys && (key === this.defaultSelectedKeys)) {
+          ele.selected = true
+        } else {
+          ele.selected = false
         }
       }
     }
   }
 
   /**
-   * 监听menu-item 和 submenu的点击事件
+   * 监听belle-menu-item 的点击事件
    */
   handleChange(e: Event) {
     const { key, type } = (e as CustomEvent).detail
