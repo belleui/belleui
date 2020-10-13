@@ -1,5 +1,4 @@
 import { customElement, LitElement, html, TemplateResult, query, property } from 'lit-element'
-import { fire } from '@belleui/belle-lib'
 
 type RadioItem = HTMLElement & { checked: boolean, value: string }
 
@@ -56,7 +55,14 @@ export class BelleRadioGroup extends LitElement {
     this.radioNodes.forEach(node => {
       return (node.checked = node === item)
     })
-    fire(this, 'on-change', { selected: this.selected })
+
+    this.dispatchEvent(new CustomEvent('on-change', {
+      bubbles: true,
+      composed: true,
+      detail: {
+        selected: this.selected
+      }
+    }))
   }
 
   slotChange() {

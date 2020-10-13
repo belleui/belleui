@@ -1,5 +1,4 @@
 import { customElement, LitElement, html, property, TemplateResult, query } from 'lit-element'
-import { fire } from '@belleui/belle-lib'
 
 import style from './belle-switch-css'
 
@@ -44,7 +43,13 @@ export class BelleSwitch extends LitElement {
 
   handleChange() {
     this.checked = this.formElement.checked
-    fire(this, 'change', { checked: this.checked })
+    this.dispatchEvent(new CustomEvent('change', {
+      bubbles: true,
+      composed: true,
+      detail: {
+        checked: this.checked
+      }
+    }))
   }
 }
 

@@ -25,7 +25,6 @@
   },
   "dependencies": {
     "@belleui/belle-button": "^0.0.1-alpha.0",
-    "@belleui/belle-lib": "^0.0.1-alpha.0",
     "@belleui/belle-radio": "^0.0.1-alpha.0",
     "@belleui/belle-switch": "^0.0.1-alpha.0"
   }

@@ -1,5 +1,4 @@
 import { customElement, LitElement, html, property, TemplateResult, query } from 'lit-element'
-import { fire } from '@belleui/belle-lib'
 
 import style from './belle-radio-css'
 
@@ -59,7 +58,13 @@ export class BelleRadio extends LitElement {
 
   handleChange() {
     this.checked = this.input.checked
-    fire(this, 'change', { checked: this.checked })
+    this.dispatchEvent(new CustomEvent('change', {
+      bubbles: true,
+      composed: true,
+      detail: {
+        checked: this.checked
+      }
+    }))
   }
 }
 

@@ -1,5 +1,4 @@
 import { customElement, LitElement, html, property, TemplateResult } from 'lit-element'
-import { fire } from '@belleui/belle-lib'
 
 import style from './belle-menu-css'
 
@@ -60,7 +59,14 @@ export class BelleMenuItem extends LitElement {
   }
 
   handleClick() {
-    fire(this, 'change', { key: this.key, type: 'menuChange' })
+    this.dispatchEvent(new CustomEvent('change', {
+      bubbles: true,
+      composed: true,
+      detail: {
+        key: this.key,
+        type: 'menuChange'
+      }
+    }))
   }
 }
 
