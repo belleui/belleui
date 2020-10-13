@@ -1,0 +1,30 @@
+{
+  "name": "@belleui/belle-modal",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [
+    "web-components",
+    "belleui"
+  ],
+  "author": "WUSO01 <hi.wuso01@gmail.com>",
+  "homepage": "https://github.com/belleui/belleui/tree/master/packages/belle-modal",
+  "license": "MIT",
+  "main": "lib/belle-modal.js",
+  "module": "lib/belle-modal.js",
+  "types": "lib/belle-modal.d.ts",
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/belleui/belleui",
+    "directory": "packages/belle-modal"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@belleui/belle-button": "^0.0.1-alpha.0",
+    "lit-element": "^2.3.1"
+  }
+}
