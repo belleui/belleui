@@ -20,6 +20,7 @@ Bellui是一个基于 [Web Components](https://developer.mozilla.org/en-US/docs/
 | Components | Issues | Version |
 | ---------- | ------- | ------ |
 | [belle-button](https://github.com/belleui/belleui/blob/master/packages/belle-button) | [Issues](https://github.com/belleui/belleui/issues?q=label%3AComponent%3AButton) | [![npm version](https://img.shields.io/npm/v/@belleui/belle-button.svg?style=flat)](https://www.npmjs.com/package/@belleui/belle-button) |
+| [belle-card](https://github.com/belleui/belleui/blob/master/packages/belle-card) | [Issues](https://github.com/belleui/belleui/issues?q=label%3AComponent%3ACard) | |
 | [belle-elements](https://github.com/belleui/belleui/blob/master/packages/belle-elements) |  [Issues](https://github.com/belleui/belleui/issues?q=label%3AComponent%3AElements)  | [![npm version](https://img.shields.io/npm/v/@belleui/belle-elements.svg?style=flat)](https://www.npmjs.com/package/@belleui/belle-elements) |
 | [belle-menu](https://github.com/belleui/belleui/blob/master/packages/belle-menu) |  [Issues](https://github.com/belleui/belleui/issues?q=label%3AComponent%3AMenu)  | 
 | [belle-modal](https://github.com/belleui/belleui/blob/master/packages/belle-modal) |  [Issues](https://github.com/belleui/belleui/issues?q=label%3AComponent%3AModal)  | 
