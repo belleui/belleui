@@ -44,6 +44,27 @@ export class BelleModal extends LitElement {
    */
   @property({ type: Boolean }) maskClosable = true
 
+  /**
+   * 取消按钮文字
+   * @type {string}
+   * @attr
+   */
+  @property({ type: String }) cancelText = '取消'
+
+  /**
+   * 确认按钮文字
+   * @type {string}
+   * @attr
+   */
+  @property({ type: String }) okText = '确认'
+
+  /**
+   * 自定义footer，为null时不显示footer
+   * @type {TemplateResult | null}
+   * @attr
+   */
+  @property() footer: any = ''
+
   firstUpdated() {
     this.modalMask.addEventListener('click', () => {
       if (this.maskClosable) {
@@ -53,6 +74,8 @@ export class BelleModal extends LitElement {
   }
 
   render(): TemplateResult {
+    console.log('footer is:', this.footer)
+
     const classes = {
       'belle-modal': true,
       'modal-open': this.visible
@@ -69,10 +92,7 @@ export class BelleModal extends LitElement {
           <div class="modal-body">
             <slot></slot>
           </div>
-          <div class="modal-footer">
-            <belle-button @click="${this.handleCancel}">取消</belle-button>
-            <belle-button type="primary" @click="${this.handleOk}">确定</belle-button>
-          </div>
+          ${this.renderFooter()}  
         </div>
       </div>
     `
@@ -88,6 +108,21 @@ export class BelleModal extends LitElement {
     }
 
     return html``
+  }
+
+  protected renderFooter(): TemplateResult {
+    if (this.footer === null) return html``
+
+    if (this.footer) {
+      return html`<div class="modal-footer">${this.footer}</div>`
+    }
+
+    return html`
+      <div class="modal-footer">
+        <belle-button @click="${this.handleCancel}">${this.cancelText}</belle-button>
+        <belle-button type="primary" @click="${this.handleOk}">${this.okText}</belle-button>
+      </div>
+    `
   }
 
   handleCancel() {
