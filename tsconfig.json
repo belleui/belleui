@@ -8,8 +8,6 @@
       "DOM",
       "DOM.Iterable"
     ],
-    "sourceMap": true,
-    "inlineSources": true,
     "declaration": true,
     "strict": true,
     "strictNullChecks": true,
