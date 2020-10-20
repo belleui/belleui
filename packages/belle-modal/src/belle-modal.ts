@@ -74,8 +74,6 @@ export class BelleModal extends LitElement {
   }
 
   render(): TemplateResult {
-    console.log('footer is:', this.footer)
-
     const classes = {
       'belle-modal': true,
       'modal-open': this.visible
