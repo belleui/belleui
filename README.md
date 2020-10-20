@@ -26,6 +26,7 @@ Bellui是一个基于 [Web Components](https://developer.mozilla.org/en-US/docs/
 | [belle-modal](https://github.com/belleui/belleui/blob/master/packages/belle-modal) |  [Issues](https://github.com/belleui/belleui/issues?q=label%3AComponent%3AModal)  | 
 | [belle-radio](https://github.com/belleui/belleui/blob/master/packages/belle-radio) |  [Issues](https://github.com/belleui/belleui/issues?q=label%3AComponent%3ARadio)  | [![npm version](https://img.shields.io/npm/v/@belleui/belle-radio.svg?style=flat)](https://www.npmjs.com/package/@belleui/belle-radio) 
 | [belle-switch](https://github.com/belleui/belleui/blob/master/packages/belle-switch) |  [Issues](https://github.com/belleui/belleui/issues?q=label%3AComponent%Switch)  | [![npm version](https://img.shields.io/npm/v/@belleui/belle-switch.svg?style=flat)](https://www.npmjs.com/package/@belleui/belle-switch) 
+| [belle-tag](https://github.com/belleui/belleui/blob/master/packages/belle-tag) |  [Issues](https://github.com/belleui/belleui/issues?q=label%3AComponent%Tag)  | |
 
 ## 开始
 
