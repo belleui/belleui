@@ -1,0 +1,29 @@
+{
+  "name": "@belleui/belle-tag",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [
+    "web-components",
+    "belleui"
+  ],
+  "author": "WUSO01 <hi.wuso01@gmail.com>",
+  "homepage": "https://github.com/belleui/belleui/tree/master/packages/belle-tag",
+  "license": "MIT",
+  "main": "lib/belle-tag.js",
+  "module": "lib/belle-tag.js",
+  "types": "lib/belle-tag.d.ts",
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/belleui/belleui",
+    "directory": "packages/belle-tag"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "lit-element": "^2.3.1"
+  }
+}

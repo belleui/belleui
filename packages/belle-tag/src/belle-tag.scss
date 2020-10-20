@@ -1,0 +1,15 @@
+:host {
+  display: inline-block;
+  --background-color: #fafafa;
+}
+.belle-tag {
+  box-sizing: border-box;
+  padding: 0 7px;
+  font-size: 14px;
+  background: var(--background-color);
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  &.belle-tag-color {
+    color: #fff;
+  }
+}
