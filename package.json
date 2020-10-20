@@ -12,7 +12,7 @@
     "lint:fix": "npm run lint:typescript -- --fix && npm run lint:lit -- --fix",
     "lint:lit": "lit-analyzer \"packages/**/src/*.ts\" --strict",
     "prestorybook": "wca analyze 'packages/*/src/*.ts' --format json --outFile custom-elements.json",
-    "storybook": "yarn build && run-p stories:watch storybook:start",
+    "storybook": "run-p stories:watch storybook:start",
     "storybook:start": "start-storybook --node-resolve --watch --open",
     "stories:build": "tsc --build .storybook/tsconfig.json",
     "stories:watch": "tsc --build .storybook/tsconfig.json -w",
