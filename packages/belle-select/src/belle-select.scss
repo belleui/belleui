@@ -1,0 +1,28 @@
+:host {
+  display: inline-block;
+  width: 150px;
+  color: rgba($color: #000000, $alpha: .8);
+}
+.select-selector{
+  box-sizing: border-box;
+  position: relative;
+  padding: 0 11px;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
+  transition: all .3s cubic-bezier(.645,.045,.355,1);
+  .select-item {
+    height: 100%;
+    width: 100%;
+  }
+}
+.belle-select-options {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 11px;
+}
