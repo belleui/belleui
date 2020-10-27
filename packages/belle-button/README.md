@@ -1,11 +1,13 @@
-<!-- ⚠️ This README has been generated from the file(s) "/Users/wusong/Code/github-project/belleui/packages/belle-button/readme/blueprint.md" ⚠️--><h1 align="center">belleui</h1>
+[](#belleuibelle-button)
 
-<p align="center">
+# @belleui/belle-button
+
+<p>
 		<a href="https://npmcharts.com/compare/@belleui/belle-button?minimal=true"><img alt="Downloads per month" src="https://img.shields.io/npm/dm/@belleui/belle-button.svg" height="20"/></a>
 <a href="https://www.npmjs.com/package/@belleui/belle-button"><img alt="NPM Version" src="https://img.shields.io/npm/v/@belleui/belle-button.svg" height="20"/></a>
 <a href="https://github.com/belleui/belleui/blob/master/packages/belle-button"><img alt="TypeScript" src="https://img.shields.io/npm/types/@belleui/belle-button" height="20"/></a>
 <a href="https://www.webcomponents.org/element/@belleui/belle-button"><img alt="Published on webcomponents.org" src="https://img.shields.io/badge/webcomponents.org-published-blue.svg" height="20"/></a>
-	</p>
+</p>
 
 
 
@@ -15,6 +17,11 @@
 
 ![screent shot](./image/screenshot.png)
 
+[](#demo)
+
+## Demo
+
+[Click to view demo](https://codesandbox.io/s/belleui-react-demo-iet3z?file=/src/index.js)
 
 [](#install)
 
@@ -27,11 +34,12 @@
 
 ## Useage
 
-
-[](#belle-button)
-
-# belle-button
-
+```html
+<belle-button>Default</belle-button>
+<belle-button type="primary">Primary</belle-button>
+<belle-button outline>Outline</belle-button>
+<belle-button disabled>Disabled</belle-button>
+```
 
 [](#properties)
 
