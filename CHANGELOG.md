@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.1-alpha.1](https://github.com/belleui/belleui/compare/v0.0.1-alpha.0...v0.0.1-alpha.1) (2020-10-27)
+
+
+### Bug Fixes
+
+* **npm:** remove image folder from npmignore ([#35](https://github.com/belleui/belleui/issues/35)) ([#36](https://github.com/belleui/belleui/issues/36)) ([834e101](https://github.com/belleui/belleui/commit/834e101cafed85ed10bf1b957815267f715ac506)), closes [#32](https://github.com/belleui/belleui/issues/32)
+
+
+### Features
+
+* select component ([3f9c24f](https://github.com/belleui/belleui/commit/3f9c24f49e1c4195ff2419e5645e9ea172ea3651))
+* **belle-tag:** 新增tag组件 ([0ac7638](https://github.com/belleui/belleui/commit/0ac7638a6726b13d9c6271596475edae7657dbac))
+* **card:** 📦 新增card组件 ([1e84681](https://github.com/belleui/belleui/commit/1e84681e6d076a6794ec16656e13801e0f0f5c8c))
+* **menu:** add menu component ([#38](https://github.com/belleui/belleui/issues/38)) ([9b78aa2](https://github.com/belleui/belleui/commit/9b78aa21fa035aaa442c8ce80a7ae4964c342a40))
+* **modal:** 自定义footer ([77f0ee2](https://github.com/belleui/belleui/commit/77f0ee2bf6f4ed29d4b9475be1594df1d3009008))
+
+
+### Performance Improvements
+
+* **package.json:** 优化dev命令 ([fc117d9](https://github.com/belleui/belleui/commit/fc117d97fc65292b488c88cea434cfaf655ba1ac))
+
+
+
+
+
 ## 0.0.1-alpha.0 (2020-09-25)
 
 

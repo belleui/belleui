@@ -1,6 +1,6 @@
 {
   "name": "@belleui/belle-modal",
-  "version": "0.0.0",
+  "version": "0.0.1-alpha.1",
   "description": "",
   "keywords": [
     "web-components",
@@ -24,7 +24,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@belleui/belle-button": "^0.0.1-alpha.0",
+    "@belleui/belle-button": "^0.0.1-alpha.1",
     "lit-element": "^2.3.1"
   }
 }
