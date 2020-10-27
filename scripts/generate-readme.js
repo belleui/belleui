@@ -101,7 +101,7 @@ class Readme {
   // @TODO 截图
   writeBluePrintMd(fileName) {
     const content = dedent`
-      {{ template:title }}
+      # @belleui/${this.pkg}
 
       {{ template:badges }}
 
