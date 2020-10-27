@@ -1,6 +1,8 @@
-<!-- ⚠️ This README has been generated from the file(s) "/Users/wusong/Code/github-project/belleui/packages/belle-radio/readme/blueprint.md" ⚠️--><h1 align="center">belleui</h1>
+[](#belleuibelle-radio)
 
-<p align="center">
+# @belleui/belle-radio
+
+<p>
 		<a href="https://npmcharts.com/compare/@belleui/belle-radio?minimal=true"><img alt="Downloads per month" src="https://img.shields.io/npm/dm/@belleui/belle-radio.svg" height="20"/></a>
 <a href="https://www.npmjs.com/package/@belleui/belle-radio"><img alt="NPM Version" src="https://img.shields.io/npm/v/@belleui/belle-radio.svg" height="20"/></a>
 <a href="https://github.com/belleui/belleui/blob/master/packages/belle-radio"><img alt="TypeScript" src="https://img.shields.io/npm/types/@belleui/belle-radio" height="20"/></a>
@@ -13,6 +15,7 @@
 
 ## Preview
 
+![screent shot](./image/screenshot.png)
 
 
 [](#install)
@@ -26,15 +29,71 @@
 
 ## Useage
 
+```html
+<belle-radio-group selected="radio1">
+  <belle-radio value="radio1">Radio1</belle-radio>
+  <belle-radio value="radio2">Radio2</belle-radio>
+  <belle-radio value="radio3">Radio3</belle-radio>
+</belle-radio-group>
+```
 
-[](#belle-radio)
+[](#demo)
 
-# belle-radio
+# Demo
+
+[Click to view demo](https://codesandbox.io/s/belle-radio-rhpq0?file=/src/index.js)
+
+[](#belle-radio-group)
+
+## belle-radio-group
 
 
 [](#properties)
 
-## Properties
+### Properties
+
+| Property   | Attribute  | Type      | Description |
+|------------|------------|-----------|-------------|
+| `selected` | `selected` | `boolean` | 默认选中的值      |
+
+
+[](#methods)
+
+### Methods
+
+| Method          | Type                   |
+|-----------------|------------------------|
+| `handleChecked` | `(event: Event): void` |
+| `slotChange`    | `(): void`             |
+
+
+[](#events)
+
+### Events
+
+| Event       | Type                                             | Description |
+|-------------|--------------------------------------------------|-------------|
+| `on-change` | `CustomEvent<{ selected: string \| undefined; }>` | 单选框选中事件     |
+
+
+[](#slots)
+
+### Slots
+
+| Name | Description              |
+|------|--------------------------|
+|      | radio item（defualt slot） |
+
+
+
+[](#belle-radio)
+
+## belle-radio
+
+
+[](#properties)
+
+### Properties
 
 | Property   | Attribute  | Type      | Default | Description |
 |------------|------------|-----------|---------|-------------|
@@ -45,16 +104,25 @@
 
 [](#methods)
 
-## Methods
+### Methods
 
 | Method         | Type       |
 |----------------|------------|
 | `handleChange` | `(): void` |
 
 
+[](#events)
+
+### Events
+
+| Event    | Type                                 |
+|----------|--------------------------------------|
+| `change` | `CustomEvent<{ checked: boolean; }>` |
+
+
 [](#slots)
 
-## Slots
+### Slots
 
 | Name | Description         |
 |------|---------------------|
