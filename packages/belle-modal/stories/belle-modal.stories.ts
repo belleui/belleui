@@ -1,12 +1,14 @@
 import { TemplateResult, html } from 'lit-element'
-import { action } from '@open-wc/demoing-storybook'
+import { action, withKnobs, withWebComponentsKnobs } from '@open-wc/demoing-storybook'
 import '@belleui/belle-button'
 
 import '../lib/belle-modal.js'
 
 export default {
   title: 'Modal',
-  component: 'belle-modal'
+  component: 'belle-modal',
+  decorators: [withKnobs, withWebComponentsKnobs],
+  parameters: { options: { selectedPanel: 'storybookjs/knobs/panel' } }
 }
 
 export const basic = (): TemplateResult => {

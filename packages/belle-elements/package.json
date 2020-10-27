@@ -25,7 +25,12 @@
   },
   "dependencies": {
     "@belleui/belle-button": "^0.0.1-alpha.0",
+    "@belleui/belle-card": "^0.0.0",
+    "@belleui/belle-menu": "^0.0.0",
+    "@belleui/belle-modal": "^0.0.0",
     "@belleui/belle-radio": "^0.0.1-alpha.0",
-    "@belleui/belle-switch": "^0.0.1-alpha.0"
+    "@belleui/belle-select": "^0.0.0",
+    "@belleui/belle-switch": "^0.0.1-alpha.0",
+    "@belleui/belle-tag": "^0.0.0"
   }
 }

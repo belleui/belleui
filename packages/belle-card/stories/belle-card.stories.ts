@@ -1,10 +1,13 @@
 import { TemplateResult, html } from 'lit-element'
+import { withKnobs, withWebComponentsKnobs } from '@open-wc/demoing-storybook'
 
 import '../lib/belle-card.js'
 
 export default {
   title: 'Card',
-  component: 'belle-card'
+  component: 'belle-card',
+  decorators: [withKnobs, withWebComponentsKnobs],
+  parameters: { options: { selectedPanel: 'storybookjs/knobs/panel' } }
 }
 
 export const Default = (): TemplateResult => html`

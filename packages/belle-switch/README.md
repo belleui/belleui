@@ -1,6 +1,8 @@
-<!-- ⚠️ This README has been generated from the file(s) "/Users/wusong/Code/github-project/belleui/packages/belle-switch/readme/blueprint.md" ⚠️--><h1 align="center">belleui</h1>
+[](#belleuibelle-switch)
 
-<p align="center">
+# @belleui/belle-switch
+
+<p>
 		<a href="https://npmcharts.com/compare/@belleui/belle-switch?minimal=true"><img alt="Downloads per month" src="https://img.shields.io/npm/dm/@belleui/belle-switch.svg" height="20"/></a>
 <a href="https://www.npmjs.com/package/@belleui/belle-switch"><img alt="NPM Version" src="https://img.shields.io/npm/v/@belleui/belle-switch.svg" height="20"/></a>
 <a href="https://github.com/belleui/belleui/blob/master/packages/belle-switch"><img alt="TypeScript" src="https://img.shields.io/npm/types/@belleui/belle-switch" height="20"/></a>
@@ -13,6 +15,8 @@
 
 ## Preview
 
+![screent shot](./image/screenshot.png)
+
 [](#install)
 
 ## Install
@@ -24,4 +28,36 @@
 
 ## Useage
 
-{{ load:./packages/belle-switch/readme/property.md }}
+```html
+<belle-switch>Switch</belle-switch>
+<belle-switch disabled>Disabled</belle-switch>
+<belle-switch checked>Checked</belle-switch>
+```
+
+[](#properties)
+
+## Properties
+
+| Property   | Attribute  | Type      | Default | Description |
+|------------|------------|-----------|---------|-------------|
+| `checked`  | `checked`  | `boolean` | false   | 默认是否选中      |
+| `disabled` | `disabled` | `boolean` | false   | 是否禁用        |
+
+
+[](#methods)
+
+## Methods
+
+| Method         | Type       |
+|----------------|------------|
+| `handleChange` | `(): void` |
+
+
+[](#events)
+
+## Events
+
+| Event    | Type                                 |
+|----------|--------------------------------------|
+| `change` | `CustomEvent<{ checked: boolean; }>` |
+

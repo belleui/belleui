@@ -1,20 +1,15 @@
 import { TemplateResult, html } from 'lit-element'
+import { withKnobs, withWebComponentsKnobs } from '@open-wc/demoing-storybook'
 
-import '../lib/belle-switch'
+import '../lib/belle-switch.js'
 
 export default {
   title: 'switch',
-  component: 'belle-switch'
+  component: 'belle-switch',
+  decorators: [withKnobs, withWebComponentsKnobs],
+  parameters: { options: { selectedPanel: 'storybookjs/knobs/panel' } }
 }
 
 export const Default = (): TemplateResult => html`
   <belle-switch>Switch</belle-switch>
-`
-
-export const Disabled = (): TemplateResult => html`
-  <belle-switch disabled>Disabled</belle-switch>
-`
-
-export const Checked = (): TemplateResult => html`
-  <belle-switch checked>Checked</belle-switch>
 `

@@ -1,4 +1,8 @@
 import '@belleui/belle-button'
+import '@belleui/belle-card'
+import '@belleui/belle-menu'
+import '@belleui/belle-modal'
 import '@belleui/belle-radio'
-
+import '@belleui/belle-select'
 import '@belleui/belle-switch'
+import '@belleui/belle-tag'

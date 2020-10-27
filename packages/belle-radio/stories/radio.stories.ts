@@ -1,11 +1,13 @@
-import { action } from '@open-wc/demoing-storybook'
 import { TemplateResult, html } from 'lit-element'
+import { action, withKnobs, withWebComponentsKnobs } from '@open-wc/demoing-storybook'
 
-import '@belleui/belle-radio'
+import '../lib/index'
 
 export default {
   title: 'Radio',
-  component: 'belle-radio'
+  component: 'belle-radio',
+  decorators: [withKnobs, withWebComponentsKnobs],
+  parameters: { options: { selectedPanel: 'storybookjs/knobs/panel' } }
 }
 
 export const Default = (): TemplateResult => html`

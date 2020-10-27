@@ -1,6 +1,8 @@
-<!-- ⚠️ This README has been generated from the file(s) "/Users/wusong/Code/github-project/belleui/packages/belle-tag/readme/blueprint.md" ⚠️--><h1 align="center">belleui</h1>
+[](#belleuibelle-tag)
 
-<p align="center">
+# @belleui/belle-tag
+
+<p>
 		<a href="https://npmcharts.com/compare/@belleui/belle-tag?minimal=true"><img alt="Downloads per month" src="https://img.shields.io/npm/dm/@belleui/belle-tag.svg" height="20"/></a>
 <a href="https://www.npmjs.com/package/@belleui/belle-tag"><img alt="NPM Version" src="https://img.shields.io/npm/v/@belleui/belle-tag.svg" height="20"/></a>
 <a href="https://github.com/belleui/belleui/blob/master/packages/belle-tag"><img alt="TypeScript" src="https://img.shields.io/npm/types/@belleui/belle-tag" height="20"/></a>
@@ -27,11 +29,10 @@
 
 ## Useage
 
-
-[](#belle-tag)
-
-# belle-tag
-
+```html
+  <belle-tag>Tag1</belle-tag>
+  <belle-tag color="#333">Tag2</belle-tag>
+```
 
 [](#properties)
 
