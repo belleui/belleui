@@ -1,0 +1,29 @@
+{
+  "name": "@belleui/belle-datepicker",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [
+    "web-components",
+    "belleui"
+  ],
+  "author": "WUSO01 <hi.wuso01@gmail.com>",
+  "homepage": "https://github.com/belleui/belleui/tree/master/packages/belle-datepicker",
+  "license": "MIT",
+  "main": "lib/belle-datepicker.js",
+  "module": "lib/belle-datepicker.js",
+  "types": "lib/belle-datepicker.d.ts",
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/belleui/belleui",
+    "directory": "packages/belle-datepicker"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "lit-element": "^2.3.1"
+  }
+}
