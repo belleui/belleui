@@ -6,6 +6,7 @@ node_modules
 /packages/**/lib
 *-css.ts
 *.stories.js
+*.test.js
 *.d.ts
 !global.d.ts
 *.js.map
