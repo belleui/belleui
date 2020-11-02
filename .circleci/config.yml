@@ -1,4 +1,10 @@
 version: 2.1
+executors:
+  node:
+    docker:
+        - image: mcr.microsoft.com/playwright:next
+    environment:
+        NODE_ENV: development
 
 commands:
   setup:
