@@ -2,9 +2,11 @@ version: 2.1
 
 commands:
   setup:
-    - run:
-      name: Install
-      command: yarn
+    steps:
+      - run:
+        name: Install
+        command: yarn
+        
 jobs:
   build:
     executor: node
@@ -21,3 +23,8 @@ jobs:
     - run:
       name: Test
       command: yarn test
+
+workflows:
+  build:
+    jobs:
+      - build
