@@ -13,12 +13,4 @@ jobs:
           steps:
             - run: yarn
 
-      - run:
-        name: Lint
-        command: yarn lint
-
-      - run: yarn lint:lit
-
-      - run:
-        name: Test
-        command: yarn test
+      - run: yarn lint
