@@ -1,5 +1,5 @@
 {
-  "name": "@belleui/belle-menu",
+  "name": "@belleui/belle-tag",
   "version": "0.0.1-alpha.1",
   "description": "",
   "keywords": [
@@ -7,18 +7,18 @@
     "belleui"
   ],
   "author": "WUSO01 <hi.wuso01@gmail.com>",
-  "homepage": "https://github.com/belleui/belleui/tree/master/packages/belle-menu",
+  "homepage": "https://github.com/belleui/belleui/tree/master/packages/tag",
   "license": "MIT",
-  "main": "lib/index.js",
-  "module": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "lib/belle-tag.js",
+  "module": "lib/belle-tag.js",
+  "types": "lib/belle-tag.d.ts",
   "files": [
     "lib"
   ],
   "repository": {
     "type": "git",
     "url": "https://github.com/belleui/belleui",
-    "directory": "packages/belle-menu"
+    "directory": "packages/tag"
   },
   "publishConfig": {
     "access": "public"

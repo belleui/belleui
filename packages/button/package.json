@@ -1,24 +1,25 @@
 {
-  "name": "@belleui/belle-select",
+  "name": "@belleui/belle-button",
   "version": "0.0.1-alpha.1",
-  "description": "",
+  "description": "button",
   "keywords": [
+    "button",
     "web-components",
     "belleui"
   ],
   "author": "WUSO01 <hi.wuso01@gmail.com>",
-  "homepage": "https://github.com/belleui/belleui/tree/master/packages/belle-select",
+  "homepage": "https://github.com/belleui/belleui/tree/master/packages/button",
   "license": "MIT",
-  "main": "lib/index.js",
-  "module": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "lib/belle-button.js",
+  "module": "lib/belle-button.js",
+  "types": "lib/belle-button.d.ts",
   "files": [
     "lib"
   ],
   "repository": {
     "type": "git",
     "url": "https://github.com/belleui/belleui",
-    "directory": "packages/belle-select"
+    "directory": "packages/button"
   },
   "publishConfig": {
     "access": "public"

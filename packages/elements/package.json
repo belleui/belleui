@@ -7,7 +7,7 @@
     "belleui"
   ],
   "author": "WUSO01 <hi.wuso01@gmail.com>",
-  "homepage": "https://github.com/belleui/belleui/tree/master/packages/belle-elements",
+  "homepage": "https://github.com/belleui/belleui/tree/master/packages/elements",
   "license": "MIT",
   "main": "lib/belle-elements.js",
   "module": "lib/belle-elements.js",
@@ -18,7 +18,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/belleui/belleui",
-    "directory": "packages/belle-elements"
+    "directory": "packages/elements"
   },
   "publishConfig": {
     "access": "public"
