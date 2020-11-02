@@ -19,3 +19,4 @@ dist
 _site
 
 package-lock.json
+.tsbuildinfo
