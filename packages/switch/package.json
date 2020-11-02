@@ -7,7 +7,7 @@
     "belleui"
   ],
   "author": "WUSO01 <hi.wuso01@gmail.com>",
-  "homepage": "https://github.com/belleui/belleui/tree/master/packages/belle-switch",
+  "homepage": "https://github.com/belleui/belleui/tree/master/packages/switch",
   "license": "MIT",
   "main": "lib/belle-switch.js",
   "module": "lib/belle-switch.js",
@@ -18,7 +18,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/belleui/belleui",
-    "directory": "packages/belle-switch"
+    "directory": "packages/switch"
   },
   "publishConfig": {
     "access": "public"

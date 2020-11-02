@@ -5,7 +5,7 @@
 <p>
 		<a href="https://npmcharts.com/compare/@belleui/belle-radio?minimal=true"><img alt="Downloads per month" src="https://img.shields.io/npm/dm/@belleui/belle-radio.svg" height="20"/></a>
 <a href="https://www.npmjs.com/package/@belleui/belle-radio"><img alt="NPM Version" src="https://img.shields.io/npm/v/@belleui/belle-radio.svg" height="20"/></a>
-<a href="https://github.com/belleui/belleui/blob/master/packages/belle-radio"><img alt="TypeScript" src="https://img.shields.io/npm/types/@belleui/belle-radio" height="20"/></a>
+<a href="https://github.com/belleui/belleui/blob/master/packages/radio"><img alt="TypeScript" src="https://img.shields.io/npm/types/@belleui/belle-radio" height="20"/></a>
 <a href="https://www.webcomponents.org/element/@belleui/belle-radio"><img alt="Published on webcomponents.org" src="https://img.shields.io/badge/webcomponents.org-published-blue.svg" height="20"/></a>
 	</p>
 

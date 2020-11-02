@@ -1,5 +1,5 @@
 {
-  "name": "@belleui/belle-tag",
+  "name": "@belleui/belle-card",
   "version": "0.0.1-alpha.1",
   "description": "",
   "keywords": [
@@ -7,18 +7,18 @@
     "belleui"
   ],
   "author": "WUSO01 <hi.wuso01@gmail.com>",
-  "homepage": "https://github.com/belleui/belleui/tree/master/packages/belle-tag",
+  "homepage": "https://github.com/belleui/belleui/tree/master/packages/card",
   "license": "MIT",
-  "main": "lib/belle-tag.js",
-  "module": "lib/belle-tag.js",
-  "types": "lib/belle-tag.d.ts",
+  "main": "lib/belle-card.js",
+  "module": "lib/belle-card.js",
+  "types": "lib/belle-card.d.ts",
   "files": [
     "lib"
   ],
   "repository": {
     "type": "git",
     "url": "https://github.com/belleui/belleui",
-    "directory": "packages/belle-tag"
+    "directory": "packages/card"
   },
   "publishConfig": {
     "access": "public"
