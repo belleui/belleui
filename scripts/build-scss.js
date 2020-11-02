@@ -39,8 +39,8 @@ const packages = getPkg('packages')
 
 if (packages.length) {
   packages.forEach(pkg => {
-    const scssFile = path.join('packages', pkg, 'src', `${pkg}.scss`)
-    const cssTS = path.join('packages', pkg, 'src', `${pkg}-css.ts`)
+    const scssFile = path.join('packages', pkg, 'src', `belle-${pkg}.scss`)
+    const cssTS = path.join('packages', pkg, 'src', `belle-${pkg}-css.ts`)
 
     if (fs.existsSync(scssFile)) {
       sassRender(scssFile, cssTS)
