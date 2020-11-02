@@ -17,18 +17,18 @@ jobs:
   build:
     executor: node
     
-  steps:
-    - setup
-    
-    - run:
-      name: Lint
-      command: yarn lint
-     
-    - run: yarn lint:lit
-    
-    - run:
-      name: Test
-      command: yarn test
+    steps:
+      - setup
+
+      - run:
+        name: Lint
+        command: yarn lint
+
+      - run: yarn lint:lit
+
+      - run:
+        name: Test
+        command: yarn test
 
 workflows:
   build:
