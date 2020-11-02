@@ -1,24 +1,17 @@
 version: 2.1
-executors:
-  node:
-    docker:
-        - image: mcr.microsoft.com/playwright:next
-    environment:
-        NODE_ENV: development
-
-commands:
-  setup:
-    steps:
-      - run:
-        name: Install
-        command: yarn
-        
+orbs:
+  node: circleci/node@1.1
+         
 jobs:
   build:
-    executor: node
+    executor:
+      name: node/default
     
     steps:
-      - setup
+      - checkout
+      - node/with-cache:
+          steps:
+            - run: yarn
 
       - run:
         name: Lint
@@ -29,8 +22,3 @@ jobs:
       - run:
         name: Test
         command: yarn test
-
-workflows:
-  build:
-    jobs:
-      - build
