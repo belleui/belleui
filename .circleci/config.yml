@@ -19,5 +19,5 @@ jobs:
     steps:
       - setup
       - run: yarn lint
-      - run: yarn test:ci
+      - run: yarn test
       - run: bash <(curl -s https://codecov.io/bash)
