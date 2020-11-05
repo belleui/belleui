@@ -1,0 +1,9 @@
+# exposed ports
+ports:
+  - port: 8000
+    onOpen: open-preview
+
+# start up tasks
+tasks:
+  - init: yarn install && yarn run build
+    command: yarn run dev
