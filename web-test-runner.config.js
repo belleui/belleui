@@ -39,7 +39,6 @@ module.exports = {
     playwrightLauncher({
       product: 'chromium',
       launchOptions: {
-        executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
         args: ['--no-sandbox']
       }
     })
