@@ -51,8 +51,6 @@ yarn add @belleui/belle-elements
 
 在 `Web Components` 项目中使用:
 
-[![Edit rough-dream-97k4u](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/rough-dream-97k4u?fontsize=14&hidenavigation=1&theme=dark)
-
 ```javascript
 import { LitElement, html } from 'lit-element'
 import '@belleui/belle-elements'
@@ -72,6 +70,8 @@ class MyApp extends LitElement {
 
 
 ## 开发
+
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/belleui/belleui)
 
 使用 [yarn](https://yarnpkg.com/) 作为你的包管理工具
 
