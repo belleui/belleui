@@ -1,11 +1,15 @@
 version: 2.1
-orbs:
-  node: circleci/node@1.1
-         
+executors:
+  node:
+    docker:
+      - image: mcr.microsoft.com/playwright:bionic
+    environment:
+      NODE_ENV: development
+
 jobs:
   build:
     executor:
-      name: node/default
+      name: node
     
     steps:
       - checkout
