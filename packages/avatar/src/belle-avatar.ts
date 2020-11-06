@@ -7,6 +7,8 @@ type Shape = 'circle' | 'square'
 
 /**
  * @element belle-avatar
+ * @cssprop [--background-color=#ccc] The default background color
+ * @cssprop [--font-color=#fff] Font Color
  */
 @customElement('belle-avatar')
 export class BelleAvatar extends LitElement {
@@ -25,8 +27,6 @@ export class BelleAvatar extends LitElement {
   @property({ type: String }) src = ''
 
   render(): TemplateResult {
-    console.log('this.src is:', this.src)
-
     const classes = {
       'belle-avatar': true,
       'belle-avatar-img': this.src
