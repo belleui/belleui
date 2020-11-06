@@ -1,0 +1,30 @@
+:host {
+  --background-color: #ccc;
+  --font-color: #fff;
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  color: var(--font-color);
+  line-height: 64px;
+  text-align: center;
+  border-radius: 2px;
+  overflow: hidden;
+}
+:host([shape="circle"]) {
+  border-radius: 50%;
+}
+.belle-avatar {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--background-color);
+  &.belle-avatar-img {
+    background: 0 0;
+  }
+  > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
