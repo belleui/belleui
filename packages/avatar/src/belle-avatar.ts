@@ -35,7 +35,7 @@ export class BelleAvatar extends LitElement {
     return html`
       <span class="${classMap(classes)}">
         ${
-          this.src ? html`${this.renderImg()}` : html`<slot><slot>`
+          this.src ? html`${this.renderImg()}` : html`<slot></slot>`
         }
       </span>
     `
