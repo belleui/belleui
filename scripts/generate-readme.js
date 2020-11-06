@@ -78,17 +78,17 @@ class Readme {
         "line": "none",
         "headingPrefix": " ",
         "ids": {
-          "npm": "@belleui/${this.pkg}"
+          "npm": "@belleui/belle-${this.pkg}"
         },
         "badges": [
           {
             "alt": "TypeScript",
             "url": "https://github.com/belleui/belleui/blob/master/packages/${this.pkg}",
-            "img": "https://img.shields.io/npm/types/@belleui/${this.pkg}"
+            "img": "https://img.shields.io/npm/types/@belleui/belle-${this.pkg}"
           },
           {
             "alt": "Published on webcomponents.org",
-            "url": "https://www.webcomponents.org/element/@belleui/${this.pkg}",
+            "url": "https://www.webcomponents.org/element/@belleui/belle-${this.pkg}",
             "img": "https://img.shields.io/badge/webcomponents.org-published-blue.svg"
           }
         ]
@@ -111,7 +111,7 @@ class Readme {
 
       ## Install
 
-      > npm install @belleui/${this.pkg}
+      > npm install @belleui/belle-${this.pkg}
 
       ## Useage
 
