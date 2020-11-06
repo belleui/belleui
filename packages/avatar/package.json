@@ -1,0 +1,29 @@
+{
+  "name": "@belleui/belle-avatar",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [
+    "web-components",
+    "belleui"
+  ],
+  "author": "WUSO01 <hi.wuso01@gmail.com>",
+  "homepage": "https://github.com/belleui/belleui/tree/master/packages/avatar",
+  "license": "MIT",
+  "main": "lib/belle-avatar.js",
+  "module": "lib/belle-avatar.js",
+  "types": "lib/belle-avatar.d.ts",
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/belleui/belleui",
+    "directory": "packages/avatar"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "lit-element": "^2.3.1"
+  }
+}
