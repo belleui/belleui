@@ -1,0 +1,21 @@
+:host {
+  display: inline-block;
+}
+.belle-badge {
+  display: inline-block;
+  position: relative;
+}
+.belle-badge-count {
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  color: #fff;
+  font-size: 12px;
+  line-height: 20px;
+  white-space: nowrap;
+  text-align: center;
+  background: #ff4d4f;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 0 1px #fff;
+  box-shadow: 0 0 0 1px #fff;
+}
