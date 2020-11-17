@@ -20,6 +20,7 @@ Bellui是一个基于 [Web Components](https://developer.mozilla.org/en-US/docs/
 | Components | Issues | Version |
 | ---------- | ------- | ------ |
 | [belle-avatar](https://github.com/belleui/belleui/blob/master/packages/avatar) | [Issues](https://github.com/belleui/belleui/issues?q=label%3AComponent%3AAvatar) | |
+| [belle-badge](https://github.com/belleui/belleui/blob/master/packages/badge) | [Issues](https://github.com/belleui/belleui/issues?q=label%3AComponent%3ABadge) | |
 | [belle-button](https://github.com/belleui/belleui/blob/master/packages/button) | [Issues](https://github.com/belleui/belleui/issues?q=label%3AComponent%3AButton) | [![npm version](https://img.shields.io/npm/v/@belleui/belle-button.svg?style=flat)](https://www.npmjs.com/package/@belleui/belle-button) |
 | [belle-card](https://github.com/belleui/belleui/blob/master/packages/card) | [Issues](https://github.com/belleui/belleui/issues?q=label%3AComponent%3ACard) | [![npm version](https://img.shields.io/npm/v/@belleui/belle-card.svg?style=flat)](https://www.npmjs.com/package/@belleui/belle-card) |
 | [belle-elements](https://github.com/belleui/belleui/blob/master/packages/elements) |  [Issues](https://github.com/belleui/belleui/issues?q=label%3AComponent%3AElements)  | [![npm version](https://img.shields.io/npm/v/@belleui/belle-elements.svg?style=flat)](https://www.npmjs.com/package/@belleui/belle-elements) |
