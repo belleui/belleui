@@ -49,6 +49,7 @@
 |------------|------------|-----------|-----------|-------------|
 | `disabled` | `disabled` | `boolean` | false     | 是否禁用按钮      |
 | `outline`  | `outline`  | `boolean` | false     | 只显示外边框      |
+| `loading`  | `loading`  | `boolean` | false     | 是否显示loading   |
 | `type`     | `type`     | `string`  | "default" | 按钮的类型       |
 
 
@@ -73,5 +74,5 @@
 | `--font-color`             |                | 按钮字体颜色          |
 | `--hover-background-color` |                | hover时按钮背景颜色    |
 | `--hover-border-color`     |                | hover时border的颜色 |
-| `--hover-font-color`       | "--font-color" | hover时按钮的颜色     |
+| `--hover-font-color`       | "--font-color" | hover时字体的颜色     |
 
