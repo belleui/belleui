@@ -26,3 +26,6 @@ export const basicButton = (): TemplateResult => html`
     @click=${action('click')}
   >Primary</belle-button>
 `
+export const lodingButton = (): TemplateResult => html`
+  <belle-button type="primary" loading>Loading</belle-button>
+`

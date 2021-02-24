@@ -89,4 +89,14 @@ button {
     background: var(--hover-background-color);
     border-color: var(--hover-border-color);
   }
+  .loading-icon {
+    margin-left: 5px;
+    animation: loadingCircle 1s linear infinite;
+  }
+}
+
+@keyframes loadingCircle {
+  100% {
+    transform: rotate(360deg);
+  }
 }
