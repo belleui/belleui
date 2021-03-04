@@ -57,7 +57,9 @@ export class BelleButton extends LitElement {
 
   render(): TemplateResult {
     return html`
-      <button ?disabled="${this.disabled}" >
+      <button
+        ?disabled="${this.disabled}"
+      >
         <span>
           <slot></slot>
         </span>
