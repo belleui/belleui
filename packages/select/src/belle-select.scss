@@ -26,3 +26,9 @@
   line-height: 30px;
   padding: 0 11px;
 }
+.belle-select-dropdown {
+  display: none;
+  &.show {
+    display: block;
+  }
+}

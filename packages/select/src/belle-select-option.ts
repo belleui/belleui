@@ -12,7 +12,7 @@ export class BelleSelectOption extends LitElement {
    * @type {string}
    * @attr
    */
-  @property({ type: String }) value = ''
+  @property({ type: String, reflect: true }) value = ''
 
   /**
    * 是否被选中
@@ -33,8 +33,12 @@ export class BelleSelectOption extends LitElement {
   }
 
   handleClick() {
-    this.dispatchEvent(new CustomEvent('click', {
-      bubbles: false,
+    console.log('this.value...', this.value)
+    this.dispatchEvent(new CustomEvent('on-click', {
+      detail: {
+        value: this.value
+      },
+      bubbles: true,
       composed: true
     }))
   }

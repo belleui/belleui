@@ -1,4 +1,5 @@
 import { customElement, LitElement, html, property, TemplateResult, query } from 'lit-element'
+import { classMap } from 'lit-html/directives/class-map.js'
 import style from './belle-select-css'
 
 type OptionItem = HTMLElement & { selected: boolean, value: string }
@@ -25,14 +26,25 @@ export class BelleSelect extends LitElement {
 
   @property({ type: String }) content = ''
 
+  @property({ type: Boolean }) isDropdown = false
+
   render(): TemplateResult {
     return html`
       <div class="belle-select">
-        <div class="select-selector">
+        <div
+          class="select-selector"
+          @click=${this.toggleDropdown}
+        >
           <span class="select-item">${this.content}</span>
           <span class="select-arrow"></span>
         </div>
-        <div class="belle-select-dropdown">
+        <div
+          class="belle-select-dropdown"
+          class=${classMap({
+            'belle-select-dropdown': true,
+            show: this.isDropdown
+          })}
+        >
           <slot id="slot" @slotchange=${this.slotChange}></slot>
         </div>
       </div>
@@ -41,15 +53,15 @@ export class BelleSelect extends LitElement {
 
   connectedCallback() {
     super.connectedCallback()
-    // this.addEventListener('click', this.handleClick)
+    this.addEventListener('on-click', this.handleClick)
   }
 
   disconnectedCallback() {
     super.disconnectedCallback()
-    // this.removeEventListener('click', this.handleClick)
+    this.removeEventListener('on-click', this.handleClick)
   }
 
-  slotChange() {
+  updated() {
     const optionSlot = this.optionSlot as HTMLSlotElement
     const optionNodes = optionSlot.assignedNodes()
 
@@ -68,6 +80,20 @@ export class BelleSelect extends LitElement {
         }
       }
     }
+  }
+
+  slotChange() {
+    this.requestUpdate()
+  }
+
+  protected handleClick(e: Event) {
+    const { value } = (e as CustomEvent).detail
+    this.name = value
+    this.toggleDropdown()
+  }
+
+  protected toggleDropdown() {
+    this.isDropdown = !this.isDropdown
   }
 }
 
