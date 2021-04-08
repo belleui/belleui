@@ -93,6 +93,19 @@ export class BelleMenu extends LitElement {
     if (!key) {
       return console.error("Current menu don't hava key")
     }
+    const subMenus = this.querySelectorAll('belle-submenu')
+    subMenus.forEach((subMenu: MenuItem) => {
+      subMenu.selected = false
+    })
+
+    if (item.tagName === 'BELLE-SUBMENU') {
+      item.selected = true
+    }
+
+    const parentElement = item.parentElement
+    if (parentElement?.tagName === 'BELLE-SUBMENU') {
+      (parentElement as MenuItem).selected = true
+    }
 
     this.defaultSelectedKeys = key
 
