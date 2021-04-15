@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.1-alpha.2](https://github.com/belleui/belleui/compare/v0.0.1-alpha.1...v0.0.1-alpha.2) (2021-04-15)
+
+
+### Bug Fixes
+
+* **avatar:** 修改slot标签没有闭合 ([#54](https://github.com/belleui/belleui/issues/54)) ([8ed0c4c](https://github.com/belleui/belleui/commit/8ed0c4c03b2594071cef6c2fa6eb3169efda889b))
+* **ci:** fix readme scripts ([#53](https://github.com/belleui/belleui/issues/53)) ([0109d36](https://github.com/belleui/belleui/commit/0109d3680aa66fcc920cf6fd1d89622a6db36a5b)), closes [#52](https://github.com/belleui/belleui/issues/52)
+* **menu:** submenu highlight ([c19ff59](https://github.com/belleui/belleui/commit/c19ff5940aabe1c740fecf430794f211568dcf7a))
+* **select:** change choosed option's value ([f4d20c6](https://github.com/belleui/belleui/commit/f4d20c63e4607b947182c0c7f11de55c28c3374c))
+* **select:** options add pointer style ([a3fa55a](https://github.com/belleui/belleui/commit/a3fa55a6d52085a51feeefff8b600384682e341f))
+
+
+### Features
+
+* **avatar:** Add avatar component ([#51](https://github.com/belleui/belleui/issues/51)) ([2330f95](https://github.com/belleui/belleui/commit/2330f9556398338ac640b197cf736195b9191db8))
+* **badge:** add badge component ([#55](https://github.com/belleui/belleui/issues/55)) ([a1bf490](https://github.com/belleui/belleui/commit/a1bf49036868f604bf47a43909b8f41e2bcde621)), closes [#56](https://github.com/belleui/belleui/issues/56)
+* **button:** button add loading state ([97c1a24](https://github.com/belleui/belleui/commit/97c1a248016c4f3ecefa4f38fdbc0ce333b5211b))
+* **elements:** 修改包的引入 ([211c208](https://github.com/belleui/belleui/commit/211c2084ff585cba9152c3cb3644e3ec8ba6764f))
+* **elements|spin:** 引入spin组件到elements中 ([2c7af9c](https://github.com/belleui/belleui/commit/2c7af9cb0ca429d3fbeb740efaf88cbdc4dee40b))
+* **modal:** enhance effect ([#60](https://github.com/belleui/belleui/issues/60)) ([7196c05](https://github.com/belleui/belleui/commit/7196c05d1bca9633c8697b3540a218291119effe))
+
+
+
+
+
 ## [0.0.1-alpha.1](https://github.com/belleui/belleui/compare/v0.0.1-alpha.0...v0.0.1-alpha.1) (2020-10-27)
 
 
