@@ -3,6 +3,9 @@ import style from './belle-spin-css'
 
 /**
  * @element belle-spin
+ *
+ * @cssprop [--bubble-color=dedada] 圆圈颜色
+ * @cssprop [--bubble-size=10px] 圆圈大小
  */
 @customElement('belle-spin')
 export class BelleSpin extends LitElement {
