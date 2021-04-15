@@ -1,0 +1,29 @@
+{
+  "name": "@belleui/belle-spin",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [
+    "web-components",
+    "belleui"
+  ],
+  "author": "WUSO01 <hi.wuso01@gmail.com>",
+  "homepage": "https://github.com/belleui/belleui/tree/master/packages/spin",
+  "license": "MIT",
+  "main": "lib/belle-spin.js",
+  "module": "lib/belle-spin.js",
+  "types": "lib/belle-spin.d.ts",
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/belleui/belleui",
+    "directory": "packages/spin"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "lit-element": "^2.3.1"
+  }
+}
