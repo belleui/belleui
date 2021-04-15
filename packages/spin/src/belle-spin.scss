@@ -1,6 +1,86 @@
+:host {
+  --bubble-color: #dedada;
+  --bubble-size: 10px;
+  display: block;
+}
+
+.spin-spinning {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .spin-wrapper {
   position: relative;
   width: 100%;
   height: 100%;
   overflow: hidden;
+}
+
+.spin-container {
+  position: relative;
+}
+
+.bubble-container {
+  position: absolute;
+  top: calc(50% - var(--bubble-size) / 2);
+  left: calc(50% - var(--bubble-size) / 2);
+  transform-origin: -150% 50%;
+  &:nth-of-type(0n+1) {
+    transform: translateX(200%) rotate(-90deg);
+    animation-delay: -1.5s;
+  }
+  &:nth-of-type(0n+2) {
+    transform: translateX(200%) rotate(-45deg);
+    animation-delay: -1.375s;
+  }
+  
+  &:nth-of-type(0n+3) {
+    transform: translateX(200%);
+    animation-delay: -1.25s;
+  }
+  
+  &:nth-of-type(0n+4) {
+    transform: translateX(200%) rotate(45deg);
+    animation-delay: -1.125s;
+  }
+  
+  &:nth-of-type(0n+5) {
+    transform: translateX(200%) rotate(90deg);
+    animation-delay: -1s;
+  }
+  
+  &:nth-of-type(0n+6) {
+    transform: translateX(200%) rotate(135deg);
+    animation-delay: -0.875s;
+  }
+  
+  &:nth-of-type(0n+7) {
+    transform: translateX(200%) rotate(180deg);
+    animation-delay: -0.750s;
+  }
+  
+  &:nth-of-type(0n+8) {
+    transform: translateX(200%) rotate(225deg);
+    animation-delay: -0.625s;
+  }
+  
+  .bubble {
+    background: var(--bubble-color);
+    width: var(--bubble-size);
+    height: var(--bubble-size);
+    border-radius: 50%;
+    animation: bubble 1s infinite;
+    animation-delay: inherit;
+  }
+}
+
+@keyframes bubble {
+  0%, 100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
 }

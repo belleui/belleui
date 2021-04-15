@@ -19,15 +19,27 @@ export class BelleSpin extends LitElement {
     return html`
       <div class="spin-wrapper">
         <div class="spin-spinning">
-          ${this.renderSpin()}
+          ${this.renderSpin(8)}
         </div>
       </div>
     `
   }
 
-  protected renderSpin(): TemplateResult {
+  protected renderSpin(length: number): TemplateResult {
+    const bubbles = []
+
+    for (let i = 0; i < length; i++) {
+      bubbles.push(html`
+        <div class="bubble-container">
+          <div class="bubble"></div>
+        </div>
+      `)
+    }
+
     return html`
-      <img src="https://miro.medium.com/max/882/1*9EBHIOzhE1XfMYoKz1JcsQ.gif"/>
+      <div class="spin-container">
+        ${bubbles}
+      </div>
     `
   }
 }
