@@ -4,7 +4,7 @@ import { withKnobs, withWebComponentsKnobs } from '@open-wc/demoing-storybook'
 import '../lib/belle-switch.js'
 
 export default {
-  title: 'Button',
+  title: 'Switch',
   component: 'belle-switch',
   decorators: [withKnobs, withWebComponentsKnobs],
   parameters: { options: { selectedPanel: 'storybookjs/knobs/panel' } }
