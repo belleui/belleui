@@ -57,14 +57,6 @@ export class BelleSubMenu extends LitElement {
 
   toogleExpand() {
     this.expand = !this.expand
-    this.dispatchEvent(new CustomEvent('change', {
-      bubbles: true,
-      composed: true,
-      detail: {
-        key: this.key,
-        type: 'menuChange'
-      }
-    }))
   }
 }
 

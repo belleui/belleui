@@ -2,7 +2,11 @@ import { customElement, LitElement, html, property, TemplateResult, query } from
 
 import style from './belle-menu-css'
 
-export type MenuItem = HTMLElement & { key: string, selected: boolean }
+export type MenuItem = HTMLElement & {
+  key: string,
+  selected: boolean,
+  expand?: boolean
+}
 
 /**
  * @element belle-menu
@@ -21,7 +25,14 @@ export class BelleMenu extends LitElement {
    * @type {string}
    * @attr
    */
-  @property({ type: String }) defaultSelectedKeys = ''
+  @property({ type: String }) defaultSelectedKey = ''
+
+  /**
+   * 默认展开的子菜单
+   * @type {Array}
+   * @attr
+   */
+  @property({ type: Array }) defaultOpenKeys: string[] = ['']
 
   render(): TemplateResult {
     return html`
@@ -33,85 +44,94 @@ export class BelleMenu extends LitElement {
 
   connectedCallback() {
     super.connectedCallback()
-    this.addEventListener('change', this.handleChange)
+    this.addEventListener('select', this.handleSelect)
   }
 
   disconnectedCallback() {
     super.disconnectedCallback()
-    this.removeEventListener('change', this.handleChange)
+    this.removeEventListener('select', this.handleSelect)
   }
 
   slotChange() {
-    // 获取menu-item 和 submenu
     const menuSlot = this.menuSlot as HTMLSlotElement
     this.findMenuItem(menuSlot)
   }
 
   private findMenuItem(nodes: HTMLElement) {
+    const { defaultSelectedKey, defaultOpenKeys } = this
+
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     let menuNodes: any = []
 
+    // 目的是为了获取belle-menus和belle-submenus下的belle-menus
     if (nodes.tagName === 'SLOT') {
       menuNodes = (nodes as HTMLSlotElement).assignedNodes()
     } else {
       menuNodes = nodes.querySelectorAll('belle-menu-item')
     }
 
-    if (menuNodes && menuNodes.length) {
+    if (menuNodes.length) {
       for (let i = 0; i < menuNodes.length; i++) {
         const ele = menuNodes[i] as MenuItem
-        const tagName = ele.tagName
-        const key = ele.key || ''
+        const { key = '', tagName, nodeType } = ele
+
+        // 筛选ELEMENT_NODE
+        if (nodeType === 1) this.nodes.push(ele)
 
         if (tagName === 'BELLE-SUBMENU') {
-          this.findMenuItem(menuNodes[i] as HTMLElement)
+          this.findMenuItem(ele)
         }
 
-        if (tagName === 'BELLE-MENU-ITEM') {
-          this.nodes.push(ele)
-          // 设置默认选中的item
-        }
-
-        if (this.defaultSelectedKeys && (key === this.defaultSelectedKeys)) {
+        // 默认选中
+        if (key === defaultSelectedKey) {
           ele.selected = true
-        } else {
-          ele.selected = false
+          // 如果是子菜单，父元素也需要高亮
+          if (ele.parentElement?.tagName === 'BELLE-SUBMENU') {
+            (ele.parentElement as MenuItem).selected = true
+          }
+        }
+
+        // 默认展开
+        if (defaultOpenKeys.includes(key)) {
+          if (tagName === 'BELLE-SUBMENU') {
+            ele.expand = true
+          }
         }
       }
     }
   }
 
   /**
-   * 监听belle-menu-item 的点击事件
+   * 监听选中事件
    */
-  handleChange(e: Event) {
-    const { key, type } = (e as CustomEvent).detail
-
-    if (type !== 'menuChange') return
-
-    const item = e.target as MenuItem
+  handleSelect(e: Event) {
+    const { key } = (e as CustomEvent).detail
 
     if (!key) {
       return console.error("Current menu don't hava key")
     }
-    const subMenus = this.querySelectorAll('belle-submenu')
-    subMenus.forEach((subMenu: MenuItem) => {
-      subMenu.selected = false
-    })
 
-    if (item.tagName === 'BELLE-SUBMENU') {
-      item.selected = true
-    }
-
-    const parentElement = item.parentElement
-    if (parentElement?.tagName === 'BELLE-SUBMENU') {
-      (parentElement as MenuItem).selected = true
-    }
-
-    this.defaultSelectedKeys = key
+    const item = e.target as MenuItem
 
     this.nodes.forEach(node => {
-      return (node.selected = node === item)
+      node.selected = node === item
     })
+
+    const parentElement = item.parentElement as MenuItem
+    if (parentElement?.tagName === 'BELLE-SUBMENU') {
+      parentElement.selected = true
+    } else {
+      parentElement.selected = false
+    }
+
+    // 抛出事件
+    this.dispatchEvent(new CustomEvent('onSelect', {
+      bubbles: true,
+      composed: true,
+      detail: {
+        key
+      }
+    }))
   }
 }
 

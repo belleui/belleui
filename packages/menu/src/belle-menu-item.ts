@@ -2,6 +2,8 @@ import { customElement, LitElement, html, property, TemplateResult } from 'lit-e
 
 import style from './belle-menu-css'
 
+type Target = '_blank' | '_self' | ' _parent' | '_top'
+
 /**
  * @element belle-menu
  */
@@ -31,11 +33,11 @@ export class BelleMenuItem extends LitElement {
   @property({ type: String }) href?= ''
 
   /**
-   * @type {string}
+   * 链接打开的方式
+   * @type {'_blank' | '_self' | ' _parent' | '_top'}
    * @attr
    */
-  @property({ type: String })
-  target: '_blank' | '_self' | ' _parent' | '_top' = '_self'
+  @property({ type: String }) target: Target = '_self'
 
   /**
    * 是否选中
@@ -46,11 +48,13 @@ export class BelleMenuItem extends LitElement {
 
   render(): TemplateResult {
     return html`
-      <div class="belle-menu-item">
+      <div
+        class="belle-menu-item"
+        @click="${this.handleClick}"
+      >
         <a
           .href="${this.href || '#'}"
           .target="${this.target}"
-          @click="${this.handleClick}"
         >
           ${this.label ? this.label : html`<slot></slot>`}
         </a>
@@ -59,12 +63,11 @@ export class BelleMenuItem extends LitElement {
   }
 
   handleClick() {
-    this.dispatchEvent(new CustomEvent('change', {
+    this.dispatchEvent(new CustomEvent('select', {
       bubbles: true,
       composed: true,
       detail: {
-        key: this.key,
-        type: 'menuChange'
+        key: this.key
       }
     }))
   }
