@@ -1,3 +1,17 @@
+%arrow-styles {
+  position: absolute;
+  width: 6px;
+  height: 1.5px;
+  background-color: currentColor;
+  border-radius: 2px;
+  transition: background .3s cubic-bezier(.645,.045,.355,1),transform .3s cubic-bezier(.645,.045,.355,1),top .3s cubic-bezier(.645,.045,.355,1),color .3s cubic-bezier(.645,.045,.355,1);
+  content: "";
+}
+
+@mixin transform($property1, $property2) {
+  transform: rotate($property1) translateX($property2)
+}
+
 :host {
   --font-color: rgba($color: #000000, $alpha: 0.8);
   --active-color: red;
@@ -6,8 +20,8 @@
 
 :host([selected]) {
   --font-color: var(--active-color);
-  // --bg-color: #e6f7ff;
 }
+
 
 .belle-menu-item {
   box-sizing: border-box;
@@ -15,7 +29,7 @@
   height: 40px;
   line-height: 40px;
   padding: 0 16px 0 24px;
-  // background: var(--bg-color);
+  cursor: pointer;
   a {
     text-decoration: none;
     color: var(--font-color);
@@ -28,12 +42,21 @@
   }
 }
 
-.belle-sub-menu {
+.belle-submenu {
   box-sizing: border-box;
   padding: 0 16px 0 24px;
-  &.expand {
+  cursor: pointer;
+  &.belle-submenu-expand {
     > .content {
       height: auto;
+    }
+    .belle-menu-arrow {
+      &::before {
+        @include transform(45deg, 2.5px);
+      }
+      &::after {
+        @include transform(-45deg, -2.5px);
+      }
     }
   }
   &.selected {
@@ -50,11 +73,6 @@
     > span {
       cursor: pointer;
     }
-    > i {
-      width: 20px;
-      height: 20px;
-      border: 1px solid;
-    }
     &:hover {
       color: var(--active-color);
     }
@@ -63,5 +81,23 @@
     height: 0;
     overflow: hidden;
     transition: all .3s ease-in-out;
+  }
+  
+  // arrow
+  .belle-menu-arrow {
+    position: relative;
+    right: 16px;
+    width: 10px;
+    color: rgba(0,0,0,.85);
+    transform: translateY(-50%);
+    transition: transform .3s cubic-bezier(.645,.045,.355,1);
+    &::before {
+      @extend %arrow-styles;
+      @include transform(-45deg, 2.5px);
+    }
+    &::after {
+      @extend %arrow-styles;
+      @include transform(45deg, -2.5px);
+    }
   }
 }

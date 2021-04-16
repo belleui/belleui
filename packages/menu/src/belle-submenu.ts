@@ -37,8 +37,8 @@ export class BelleSubMenu extends LitElement {
 
   render(): TemplateResult {
     const classes = {
-      'belle-sub-menu': true,
-      expand: this.expand,
+      'belle-submenu': true,
+      'belle-submenu-expand': this.expand,
       selected: this.selected
     }
 
@@ -46,7 +46,7 @@ export class BelleSubMenu extends LitElement {
       <div class="${classMap(classes)}">
         <div class="header" @click="${this.toogleExpand}">
           <span>${this.label}</span>
-          <i></i>
+          <i class="belle-menu-arrow"></i>
         </div>
         <div class="content">
           <slot id="slot"></slot>
@@ -57,14 +57,6 @@ export class BelleSubMenu extends LitElement {
 
   toogleExpand() {
     this.expand = !this.expand
-    this.dispatchEvent(new CustomEvent('change', {
-      bubbles: true,
-      composed: true,
-      detail: {
-        key: this.key,
-        type: 'menuChange'
-      }
-    }))
   }
 }
 
