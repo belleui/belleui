@@ -24,12 +24,15 @@
     "access": "public"
   },
   "dependencies": {
+    "@belleui/belle-avatar": "^0.0.1-alpha.2",
+    "@belleui/belle-badge": "^0.0.1-alpha.2",
     "@belleui/belle-button": "^0.0.1-alpha.2",
     "@belleui/belle-card": "^0.0.1-alpha.2",
     "@belleui/belle-menu": "^0.0.1-alpha.2",
     "@belleui/belle-modal": "^0.0.1-alpha.2",
     "@belleui/belle-radio": "^0.0.1-alpha.2",
     "@belleui/belle-select": "^0.0.1-alpha.2",
+    "@belleui/belle-spin": "^0.0.1-alpha.2",
     "@belleui/belle-switch": "^0.0.1-alpha.2",
     "@belleui/belle-tag": "^0.0.1-alpha.2"
   }
