@@ -35,5 +35,6 @@
     "@belleui/belle-spin": "^0.0.1-alpha.2",
     "@belleui/belle-switch": "^0.0.2-alpha.0",
     "@belleui/belle-tag": "^0.0.1-alpha.2"
-  }
+  },
+  "gitHead": "ccb8ede1283969026e94e91ec96a6d154e5a1b75"
 }
