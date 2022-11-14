@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.2-alpha.0](https://github.com/belleui/belleui/compare/v0.0.1-alpha.2...v0.0.2-alpha.0) (2022-11-14)
+
+
+### Bug Fixes
+
+* **elements:** 丢失的包写入package.json文件 ([c1a24b7](https://github.com/belleui/belleui/commit/c1a24b71a5b1985fe9444f79be1686f4e719ee8c))
+
+
+
+
+
 ## [0.0.1-alpha.2](https://github.com/belleui/belleui/compare/v0.0.1-alpha.1...v0.0.1-alpha.2) (2021-04-15)
 
 
