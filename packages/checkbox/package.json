@@ -1,0 +1,30 @@
+{
+  "name": "@belleui/belle-checkbox",
+  "version": "0.0.0",
+  "description": "checkbox",
+  "keywords": [
+    "checkbox",
+    "web-components",
+    "belleui"
+  ],
+  "author": "WUSO01 <hi.wuso01@gmail.com>",
+  "homepage": "https://github.com/belleui/belleui/tree/master/packages/checkbox",
+  "license": "MIT",
+  "main": "lib/belle-checkbox.js",
+  "module": "lib/belle-checkbox.js",
+  "types": "lib/belle-checkbox.d.ts",
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/belleui/belleui",
+    "directory": "packages/checkbox"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "lit-element": "^2.3.1"
+  }
+}
